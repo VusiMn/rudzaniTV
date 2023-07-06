@@ -28,7 +28,8 @@ import Muted from "components/Typography/Muted.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Clearfix from "components/Clearfix/Clearfix.js";
 import Button from "components/CustomButtons/Button.js";
-import SectionResume from "AcademicWritingWebsite/views/ProfilePage/AboutUsPage/Sections/SectionResume";
+import SectionResume from "AcademicWritingWebsite/views/ProfilePage/AboutUsPage/Sections/SectionResume.js";
+import SectionHeaderLinks from "AcademicWritingWebsite/views/AboutUsPage/Sections/SectionHeaderLinks.js";
 import christian from "assets/img/faces/christian.jpg";
 import oluEletu from "assets/img/examples/olu-eletu.jpg";
 import clemOnojeghuo from "assets/img/examples/clem-onojeghuo.jpg";
@@ -41,7 +42,7 @@ import marc from "assets/img/faces/marc.jpg";
 import professorProfile from "assets/img/faces/professorProfile.jpg";
 import kendall from "assets/img/faces/kendall.jpg";
 import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
-
+import { Link } from "react-router-dom";
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.js";
 
 const useStyles = makeStyles(profilePageStyle);
@@ -62,15 +63,16 @@ export default function ProfilePage({ ...rest }) {
     <div>
       <Header
         color="transparent"
-        brand="Material Kit PRO React"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        brand="Academic Writing"
+        links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{
           height: 200,
           color: "info"
         }}
         {...rest}
-      />
+      /> 
+    
       <Parallax
         image={require("assets/img/examples/city.jpg")}
         filter="dark"
@@ -160,90 +162,7 @@ export default function ProfilePage({ ...rest }) {
                         className={classes.gridItem}
                       >
                         <SectionResume />
-                        <GridContainer className={classes.collections}>
-                          <GridItem xs={12} sm={12} md={6}>
-                            <Card
-                              background
-                              style={{
-                                backgroundImage: "url(" + mariyaGeorgieva + ")"
-                              }}
-                            >
-                              <CardBody background className={classes.cardBody}>
-                                <Badge
-                                  color="warning"
-                                  className={classes.badge}
-                                >
-                                 Professional Coaching Certificate University of Cape Town 2023
-                                </Badge>
-                                <a href="#pablo">
-                                  <h2 className={classes.cardTitleWhite}>
-                                    Stilleto
-                                  </h2>
-                                </a>
-                              </CardBody>
-                            </Card>
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
-                            <Card
-                              background
-                              style={{
-                                backgroundImage: "url(" + clemOnojeghuo + ")"
-                              }}
-                            >
-                              <CardBody background className={classes.cardBody}>
-                                <Badge color="info" className={classes.badge}>
-                                  Spring 2016
-                                </Badge>
-                                <a href="#pablo">
-                                  <h2 className={classes.cardTitleWhite}>
-                                    High Heels
-                                  </h2>
-                                </a>
-                              </CardBody>
-                            </Card>
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
-                            <Card
-                              background
-                              style={{
-                                backgroundImage: "url(" + oluEletu + ")"
-                              }}
-                            >
-                              <CardBody background className={classes.cardBody}>
-                                <Badge color="danger" className={classes.badge}>
-                                  Summer 2016
-                                </Badge>
-                                <a href="#pablo">
-                                  <h2 className={classes.cardTitleWhite}>
-                                    Flats
-                                  </h2>
-                                </a>
-                              </CardBody>
-                            </Card>
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={6}>
-                            <Card
-                              background
-                              style={{
-                                backgroundImage: "url(" + darrenColeshill + ")"
-                              }}
-                            >
-                              <CardBody background className={classes.cardBody}>
-                                <Badge
-                                  color="success"
-                                  className={classes.badge}
-                                >
-                                  Winter 2016
-                                </Badge>
-                                <a href="#pablo">
-                                  <h2 className={classes.cardTitleWhite}>
-                                    Men{"'"}s Sneakers
-                                  </h2>
-                                </a>
-                              </CardBody>
-                            </Card>
-                          </GridItem>
-                        </GridContainer>
+                      
                       </GridItem>
                       <GridItem
                         xs={12}
@@ -255,37 +174,31 @@ export default function ProfilePage({ ...rest }) {
                         <h4 className={classes.title}>Stats</h4>
                         <ul className={classes.listUnstyled}>
                           <li>
-                            <b>60</b> Products
+                            <b>19</b> - Supervised Doctoral Students
                           </li>
                           <li>
-                            <b>4</b> Collections
+                            <b>41</b> - Supervised Masters Students
                           </li>
                           <li>
-                            <b>331</b> Influencers
+                            <b>80</b> - Scholarly Publications
                           </li>
                           <li>
-                            <b>1.2K</b> Likes
+                            <b>20+</b> - Commisioned Business Research Reports
                           </li>
                         </ul>
-                        <hr />
-                        <h4 className={classes.title}>About Me</h4>
-                        <p className={classes.description}>
-                        I currently serve as the Executive Dean and CEO of the School of Business Leadership at UNISA.
-                        I have taught at the University of Witwatersrand and at University of Natal which became the University of KwaZulu-Natal after the merger. 
-                        I served as a visiting scholar at St Mary’s University in Canada, University of Mauritius and Westminster University in the UK. 
-                        I have supervised 19 doctoral students and 41 masters students to completion. I have published in excess of 80 scholarly works, more than 20 commissioned business research reports in the past 30 years of my career as an academic, 
-                        a social scientist and as an artist. I have participated in numerous international collaborative research projects located in South Africa, Uganda, Mauritius, Zimbabwe, Tanzania, Egypt, Ethiopia, Canada, USA, UK, Germany, France, Finland and Sweden. 
-                        </p>
+                 
                         <hr />
                         <h4 className={classes.title}>Focus</h4>
-                        <Badge color="primary">Footwear</Badge>
-                        <Badge color="rose">Luxury</Badge>
+                        <Badge color="primary">Academic writting</Badge>
+                        <Badge color="rose">Research</Badge>
+                        <Badge color="rose">Critical thinking</Badge>
+                        <Badge color="rose">Authentic thinkers & writers </Badge>
                       </GridItem>
                     </GridContainer>
                   )
                 },
                 {
-                  tabButton: "Connections",
+                  tabButton: "Media",
                   tabIcon: People,
                   tabContent: (
                     <div>
@@ -315,15 +228,13 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={7}>
                                 <CardBody plain>
                                   <h4 className={classes.cardTitle}>
-                                    Gigi Hadid
+                                    Podcast
                                   </h4>
                                   <Muted>
-                                    <h6>MODEL</h6>
+                                    <h6> iTunes </h6>
                                   </Muted>
                                   <p className={classes.description}>
-                                    Don{"'"}t be scared of the truth because we
-                                    need to restart the human foundation in
-                                    truth...
+                                  For authentic writers and thinkers
                                   </p>
                                 </CardBody>
                               </GridItem>
@@ -355,15 +266,13 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={7}>
                                 <CardBody plain>
                                   <h4 className={classes.cardTitle}>
-                                    Marc Jacobs
+                                   Youtube
                                   </h4>
                                   <Muted>
-                                    <h6>DESIGNER</h6>
+                                    <h6>Visual Connection</h6>
                                   </Muted>
                                   <p className={classes.description}>
-                                    Don{"'"}t be scared of the truth because we
-                                    need to restart the human foundation in
-                                    truth...
+                                    Story to help you find your writing journey 
                                   </p>
                                 </CardBody>
                               </GridItem>
@@ -397,14 +306,13 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={7}>
                                 <CardBody plain>
                                   <h4 className={classes.cardTitle}>
-                                    Kendall Jenner
+                                   Blogs
                                   </h4>
                                   <Muted>
-                                    <h6>MODEL</h6>
+                                    <h6>Academic readers paradise</h6>
                                   </Muted>
                                   <p className={classes.description}>
-                                    I love you like Kanye loves Kanye. Don
-                                    {"'"}t be scared of the truth.
+                                  All thing academic writing
                                   </p>
                                 </CardBody>
                               </GridItem>
@@ -437,13 +345,13 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={7}>
                                 <CardBody plain>
                                   <h4 className={classes.cardTitle}>
-                                    George West
+                                    Poetry
                                   </h4>
                                   <Muted>
-                                    <h6>MODEL/DJ</h6>
+                                    <h6>Food for the soul</h6>
                                   </Muted>
                                   <p className={classes.description}>
-                                    I love you like Kanye loves Kanye.
+                                    Poetry to connnect in deeper level with a personal touch
                                   </p>
                                 </CardBody>
                               </GridItem>
@@ -452,43 +360,6 @@ export default function ProfilePage({ ...rest }) {
                         </GridItem>
                       </GridContainer>
                     </div>
-                  )
-                },
-                {
-                  tabButton: "Media",
-                  tabIcon: Camera,
-                  tabContent: (
-                    <GridContainer justify="center">
-                      <GridItem xs={12} sm={12} md={3}>
-                        <img
-                          alt="..."
-                          src={mariyaGeorgieva}
-                          className={navImageClasses}
-                        />
-                        <img
-                          alt="..."
-                          src={clemOnojegaw}
-                          className={navImageClasses}
-                        />
-                      </GridItem>
-                      <GridItem xs={12} sm={12} md={3}>
-                        <img
-                          alt="..."
-                          src={clemOnojeghuo}
-                          className={navImageClasses}
-                        />
-                        <img
-                          alt="..."
-                          src={oluEletu}
-                          className={navImageClasses}
-                        />
-                        <img
-                          alt="..."
-                          src={cynthiaDelRio}
-                          className={navImageClasses}
-                        />
-                      </GridItem>
-                    </GridContainer>
                   )
                 }
               ]}
