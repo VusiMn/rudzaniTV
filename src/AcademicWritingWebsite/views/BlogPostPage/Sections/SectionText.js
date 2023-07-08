@@ -9,6 +9,8 @@ import GridItem from "components/Grid/GridItem.js";
 import Quote from "components/Typography/Quote.js";
 // core components
 
+import SectionSideImageAndText from 'AcademicWritingWebsite/views/BlogPostPage/Sections/SectionSideImageAndText';
+
 import blog4 from "assets/img/examples/blog4.jpg";
 import blog3 from "assets/img/examples/blog3.jpg";
 import blog1 from "assets/img/examples/blog1.jpg";
@@ -25,25 +27,38 @@ export default function SectionText() {
     classes.imgFluid
   );
   return (
-    <div className={classes.section}>
+    <div className={classes.section} justify="center">
+          <GridContainer justify="center">
+        <GridItem xs={12} sm={8} md={8}>
+          <h3 className={classes.title}>
+          Thinking and writing logically
+          </h3>
+          <p>
+           
+To write coherent arguments requires that we understand different components of a logically sound argument:
+          </p>
+        </GridItem>
+      </GridContainer>
+       <SectionSideImageAndText/>
       <GridContainer justify="center">
         <GridItem xs={12} sm={8} md={8}>
           <h3 className={classes.title}>
-            The Castle Looks Different at Night...
+          Thinking and writing logically
           </h3>
           <p>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more. We are here to make life better.
+           
+To write coherent arguments requires that we understand different components of a logically sound argument:
             <br />
             <br />
+
+          
             And now I look and look around and there’s so many Kanyes I{"'"}ve
             been trying to figure out the bed design for the master bedroom at
             our Hidden Hills compound... and thank you for turning my personal
             jean jacket into a couture piece.
           </p>
+
+         
           <Quote
             textClassName={classes.quoteText}
             text="“And thank you for turning my personal jean jacket into a couture piece.”"
@@ -94,6 +109,8 @@ export default function SectionText() {
           </p>
         </GridItem>
       </GridContainer>
+     
     </div>
+
   );
 }
