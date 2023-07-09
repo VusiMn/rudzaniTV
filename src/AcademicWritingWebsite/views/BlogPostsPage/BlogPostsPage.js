@@ -20,6 +20,7 @@ import SectionImage from "./Sections/SectionImage.js";
 import SubscribeLine from "./Sections/SubscribeLine.js";
 
 import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.js";
+import SectionHeaderLinks from "AcademicWritingWebsite/views/AboutUsPage/Sections/SectionHeaderLinks.js";
 
 const useStyles = makeStyles(blogPostsPageStyle);
 
@@ -33,14 +34,14 @@ export default function BlogPostsPage() {
     <div>
       <Header
         brand="Material Kit PRO React"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
         changeColorOnScroll={{
           height: 400,
           color: "info"
         }}
-      />
+      /> 
       <Parallax image={require("assets/img/bg10.jpg")} filter="dark" small>
         <div className={classes.container}>
           <GridContainer justify="center">

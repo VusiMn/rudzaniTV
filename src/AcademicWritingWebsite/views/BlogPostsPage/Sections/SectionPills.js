@@ -5,6 +5,9 @@ import Tooltip from "@material-ui/core/Tooltip";
 // @material-ui/icons
 import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 // core components
+// react components for routing our app without refresh
+import { Link } from "react-router-dom";
+
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
@@ -65,16 +68,18 @@ export default function SectionPills() {
               <h6 className={classes.category}>WORLDS</h6>
               <a href="#pablo">
                 <h3 className={classes.cardTitle}>
-                  The Best Productivity Apps on Market
+                Thinking and writing logically
                 </h3>
               </a>
               <p className={classes.category}>
-                Don{"'"}t be scared of the truth because we need to restart the
-                human foundation in truth And I love you like Kanye loves Kanye
-                I love Rick Owens’ bed design but the back is...
+              To write coherent arguments requires that we understand different components of a logically sound argument...
               </p>
               <Button round href="#pablo" color="danger">
-                <FormatAlignLeft className={classes.icons} /> Read article
+                <FormatAlignLeft className={classes.icons} />
+                <Link to="/blog-post" className={classes.listItem}>
+                Read article
+                </Link>
+                
               </Button>
             </CardBody>
           </Card>

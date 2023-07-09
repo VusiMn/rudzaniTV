@@ -46,7 +46,7 @@ export default function SectionHeader({ ...rest }) {
       <div>
         <Header
           absolute
-          brand="Creative Tim"
+          brand="Academic Writing"
           color="transparent"
           links={
             <List className={classes.list + " " + classes.mlAuto}>
@@ -78,12 +78,26 @@ export default function SectionHeader({ ...rest }) {
               </ListItem>
               <ListItem className={classes.listItem}>
                 <Button
+                  className={classes.navLink}
+                  onClick={e => e.preventDefault()}
+                  color="transparent"
+                >
+            
+                 <Link to="/blog-posts" className={classes.listItem}>
+                 Blogs
+                </Link>
+                </Button>
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                <Button
                   href="#"
                   className={classes.navLink}
                   onClick={e => e.preventDefault()}
                   color="transparent"
                 >
-                  Products
+                  <Link to="/blog-post" className={classes.listItem}>
+                      Thinking & Logical Writing   
+                    </Link>
                 </Button>
               </ListItem>
               <ListItem className={classes.listItem}>

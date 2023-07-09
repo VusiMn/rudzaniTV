@@ -40,7 +40,6 @@ export default function AboutUsPage() {
         <div className={classes.container}>
           <SectionDescription />
           <SectionServices />
-          <SectionContact />
         </div>
       </div>
       <Footer

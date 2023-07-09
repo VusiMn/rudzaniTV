@@ -23,6 +23,7 @@ import SectionComments from "./Sections/SectionComments.js";
 import SectionSimilarStories from "./Sections/SectionSimilarStories.js";
 
 import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
+import SectionHeaderLinks from "AcademicWritingWebsite/views/AboutUsPage/Sections/SectionHeaderLinks.js";
 
 const useStyles = makeStyles(blogPostPageStyle);
 
@@ -36,7 +37,7 @@ export default function BlogPostPage() {
     <div>
       <Header
         brand="Material Kit PRO React"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
         changeColorOnScroll={{
@@ -66,7 +67,6 @@ export default function BlogPostPage() {
         <div className={classes.container}>
           <SectionText />
           <SectionBlogInfo />
-          <SectionComments />
         </div>
       </div>
       <SectionSimilarStories />

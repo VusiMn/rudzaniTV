@@ -39,169 +39,39 @@ export default function SectionServices() {
             
           </h5>
           <h2 className={classes.title}>Academic Writing Topics </h2>
-        </GridItem>
-      </GridContainer>
-      <GridContainer>
-        <GridItem md={4} sm={4}>
-          <InfoArea
-            title="1. Think and Write Authentically"
-            description={
-              <span>
-                <p>
-                  The moment you use Material Kit, you know you’ve never felt
-                  anything like it. With a single use, this powerfull UI Kit
-                  lets you do more than ever before.{" "}
-                </p>
-                <a href="#pablo">Find more...</a>
-              </span>
-            }
-            icon={Gesture}
-            iconColor="rose"
-          />
-        </GridItem>
-        <GridItem md={4} sm={4}>
-          <InfoArea
-            title="2. Academic Rhetoric"
-            description={
-              <span>
-                <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing a
-                  feature will be enough.{" "}
-                </p>
-                <a href="#pablo">Find more...</a>
-              </span>
-            }
-            icon={Build}
-            iconColor="rose"
-          />
-        </GridItem>
-        <GridItem md={4} sm={4}>
-          <InfoArea
-            title="3. Theorising and Conceptualising"
-            description={
-              <span>
-                <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing a
-                  feature will be enough.{" "}
-                </p>
-                <a href="#pablo">Find more...</a>
-              </span>
-            }
-            icon="mode_edit"
-            iconColor="rose"
-          />
-        </GridItem>
-      </GridContainer>
 
-      <GridContainer>
-        <GridItem md={4} sm={4}>
-          <InfoArea
-            title="4. Identifying a Relavant Theoretical Framework"
-            description={
-              <span>
-                <p>
-                  The moment you use Material Kit, you know you’ve never felt
-                  anything like it. With a single use, this powerfull UI Kit
-                  lets you do more than ever before.{" "}
-                </p>
-                <a href="#pablo">Find more...</a>
-              </span>
-            }
-            icon={Gesture}
-            iconColor="rose"
-          />
-        </GridItem>
-        <GridItem md={4} sm={4}>
-          <InfoArea
-            title="5. Critical Theory and Literature"
-            description={
-              <span>
-                <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing a
-                  feature will be enough.{" "}
-                </p>
-                <a href="#pablo">Find more...</a>
-              </span>
-            }
-            icon={Build}
-            iconColor="rose"
-          />
-        </GridItem>
-        <GridItem md={4} sm={4}>
-          <InfoArea
-            title="6. Research Methods for Different Worldviews"
-            description={
-              <span>
-                <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing a
-                  feature will be enough.{" "}
-                </p>
-                <a href="#pablo">Find more...</a>
-              </span>
-            }
-            icon="mode_edit"
-            iconColor="rose"
-          />
+        
+                          <h6>
+                          Think and Write Authentically
+                          </h6>
+                          <h6>
+                          Academic Rhetoric
+                          </h6>
+                          <h6>
+                          Theorising and Conceptualising
+                          </h6>
+                          <h6>
+                          Identifying a Relavant Theoretical Framework
+                          </h6>
+                          <h6>
+                           Critical Theory and Literature
+                          </h6>
+                          <h6>
+                           Research Methods for Different Worldviews
+                          </h6>
+                          <h6>
+                           Writing up Qualitative Research Chapter
+                          </h6>
+                          <h6>
+                           Writing up Quantitative Research Charpter
+                          </h6>
+                          <h6>
+                          Contributing to knowledge
+                          </h6>
         </GridItem>
       </GridContainer>
+    
 
-      <GridContainer>
-        <GridItem md={4} sm={4}>
-          <InfoArea
-            title="7. Writing up Qualitative Research Chapter"
-            description={
-              <span>
-                <p>
-                  The moment you use Material Kit, you know you’ve never felt
-                  anything like it. With a single use, this powerfull UI Kit
-                  lets you do more than ever before.{" "}
-                </p>
-                <a href="#pablo">Find more...</a>
-              </span>
-            }
-            icon={Gesture}
-            iconColor="rose"
-          />
-        </GridItem>
-        <GridItem md={4} sm={4}>
-          <InfoArea
-            title="8. Writing up Quantitative Research Charpter"
-            description={
-              <span>
-                <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing a
-                  feature will be enough.{" "}
-                </p>
-                <a href="#pablo">Find more...</a>
-              </span>
-            }
-            icon={Build}
-            iconColor="rose"
-          />
-        </GridItem>
-        <GridItem md={4} sm={4}>
-          <InfoArea
-            title="9. Contributing to knowledge"
-            description={
-              <span>
-                <p>
-                  Divide details about your product or agency work into parts.
-                  Write a few lines about each one. A paragraph describing a
-                  feature will be enough.{" "}
-                </p>
-                <a href="#pablo">Find more...</a>
-              </span>
-            }
-            icon="mode_edit"
-            iconColor="rose"
-          />
-        </GridItem>
-      </GridContainer>
     </div>
   );
 }
