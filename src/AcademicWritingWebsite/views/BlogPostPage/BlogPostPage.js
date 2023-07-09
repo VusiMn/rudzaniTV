@@ -49,11 +49,10 @@ export default function BlogPostPage() {
           <GridContainer justify="center">
             <GridItem md={8} className={classes.textCenter}>
               <h1 className={classes.title}>
-                How We Built the Most Successful Castle Ever
+              Thinking and writing logically
               </h1>
               <h4 className={classes.subtitle}>
-                The last 48 hours of my life were total madness. This is what I
-                did.
+              To write coherent arguments requires that we understand different components of a logically sound argument
               </h4>
               <br />
               <Button color="rose" size="lg" round>

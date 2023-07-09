@@ -24,7 +24,7 @@ import InfoArea from "components/InfoArea/InfoArea.js";
 import featuresStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/featuresStyle.js";
 
 //import iphone from "assets/img/sections/iphone.png";
-import iphone from "assets/img/scientificDiagrams/thinkDifferently.png";
+import thinkDifferentImage from "assets/img/scientificDiagrams/thinkDifferently.png";
 //import iphone from "assets/img/scientificDiagrams/2.png";
 import iphone2 from "assets/img/sections/iphone2.png";
 import bg9 from "assets/img/bg9.jpg";
@@ -41,11 +41,11 @@ export default function SectionSideImageAndText({ ...rest }) {
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <div className={classes.phoneContainer}>
-                <img src={iphone} alt="..." />
+                <img src={thinkDifferentImage} alt="..." />
               </div>
             </GridItem>
             <GridItem xs={12} sm={6} md={6}>
-              <h3 className={classes.title}>Logical sound argument components</h3>
+              <h3 className={classes.title}>Components for a coherent argument</h3>
               <InfoArea
                 className={classes.infoArea}
                 icon={Extension}
