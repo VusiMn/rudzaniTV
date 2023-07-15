@@ -8,7 +8,6 @@ import ListItem from "@material-ui/core/ListItem";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -33,7 +32,7 @@ export default function BlogPostsPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
+        brand="Academic writing"
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"

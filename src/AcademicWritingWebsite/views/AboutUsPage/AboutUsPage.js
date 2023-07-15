@@ -9,18 +9,10 @@ import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 // core components
-import Header from "components/Header/Header.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
 // sections for this page
-import HeaderLinks from "components/Header/HeaderLinks.js";
 import SectionDescription from "AcademicWritingWebsite/views/AboutUsPage/Sections/SectionDescription.js";
-import SectionTeam from "views/AboutUsPage/Sections/SectionTeam.js";
 import SectionServices from "AcademicWritingWebsite/views/AboutUsPage/Sections/SectionServices.js";
-import SectionOffice from "views/AboutUsPage/Sections/SectionOffice.js";
-import SectionContact from "views/AboutUsPage/Sections/SectionContact.js";
 import SectionHeader from "AcademicWritingWebsite/views/AboutUsPage/Sections/SectionHeader.js";
 
 import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.js";

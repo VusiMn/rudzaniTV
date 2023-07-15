@@ -28,11 +28,11 @@ import Clearfix from "components/Clearfix/Clearfix.js";
 import Button from "components/CustomButtons/Button.js";
 import SectionResume from "AcademicWritingWebsite/views/ProfilePage/AboutUsPage/Sections/SectionResume.js";
 import SectionHeaderLinks from "AcademicWritingWebsite/views/AboutUsPage/Sections/SectionHeaderLinks.js";
-import avatar from "assets/img/faces/avatar.jpg";
-import marc from "assets/img/faces/marc.jpg";
+import podcastImg from "assets/img/academicWritingImages/LibraryImages/podcast.jpg";
+import youtubeImg from "assets/img/academicWritingImages/LibraryImages/youtube.png";
 import professorProfile from "assets/img/faces/professorProfile.jpg";
-import kendall from "assets/img/faces/kendall.jpg";
-import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
+import kendall from "assets/img/academicWritingImages/LibraryImages/library4.jpg";
+import cardProfile2Square from "assets/img/academicWritingImages/LibraryImages/creativity.jpg";
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.js";
 
 const useStyles = makeStyles(profilePageStyle);
@@ -64,7 +64,7 @@ export default function ProfilePage({ ...rest }) {
       /> 
     
       <Parallax
-        image={require("assets/img/examples/city.jpg")}
+        image={require("assets/img/academicWritingImages/LibraryImages/library2.jpg")}
         filter="dark"
         className={classes.parallax}
       />
@@ -204,12 +204,12 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
                                   <a href="#pablo">
-                                    <img src={avatar} alt="..." />
+                                    <img src={podcastImg} alt="..." />
                                   </a>
                                   <div
                                     className={classes.coloredShadow}
                                     style={{
-                                      backgroundImage: "url(" + avatar + ")",
+                                      backgroundImage: "url(" + podcastImg + ")",
                                       opacity: "1"
                                     }}
                                   />
@@ -242,12 +242,12 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
                                   <a href="#pablo">
-                                    <img src={marc} alt="..." />
+                                    <img src={youtubeImg} alt="..." />
                                   </a>
                                   <div
                                     className={classes.coloredShadow}
                                     style={{
-                                      backgroundImage: "url(" + marc + ")",
+                                      backgroundImage: "url(" + youtubeImg + ")",
                                       opacity: "1"
                                     }}
                                   />
