@@ -24,6 +24,7 @@ import "assets/scss/material-kit-pro-react.scss?v=1.9.0";
 // pages for this product
 import AboutUsPage from "AcademicWritingWebsite/views/AboutUsPage/AboutUsPage.js";
 import BlogPostPage from "AcademicWritingWebsite/views/BlogPostPage/BlogPostPage.js";
+import BlogPostCultivateCreativityPage from "AcademicWritingWebsite/views/BlogPostCultivateCreativityPage/BlogPostCultivateCreativityPage.js";
 import BlogPostsPage from "AcademicWritingWebsite/views/BlogPostsPage/BlogPostsPage.js";
 import ComponentsPage from "views/ComponentsPage/ComponentsPage.js";
 import ContactUsPage from "views/ContactUsPage/ContactUsPage.js";
@@ -47,6 +48,7 @@ ReactDOM.render(
       <Route path="/about-us"  component={PresentationPage} />
       <Route path="/blog-post" component={BlogPostPage} />
       <Route path="/blog-posts" component={BlogPostsPage} />
+      <Route path="/BlogPostCultivateCreativityPage" component={BlogPostCultivateCreativityPage} />
       <Route path="/components" component={ComponentsPage} />
       <Route path="/contact-us" component={ContactUsPage} />
       <Route path="/ecommerce-page" component={EcommercePage} />

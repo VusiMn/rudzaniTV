@@ -36,7 +36,7 @@ export default function BlogPostPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
+        brand="Academic Writing"
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"

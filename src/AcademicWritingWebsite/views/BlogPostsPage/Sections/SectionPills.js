@@ -94,16 +94,17 @@ export default function SectionPills() {
               <h6 className={classes.category}>BUSINESS</h6>
               <a href="#pablo">
                 <h3 className={classes.cardTitle}>
-                  Working on Wallstreet is Not So Easy
+                Ignite writing senses
                 </h3>
               </a>
               <p className={classes.category}>
-                Don{"'"}t be scared of the truth because we need to restart the
-                human foundation in truth And I love you like Kanye loves Kanye
-                I love Rick Owens’ bed design but the back is...
+              Cultivating creativity to write authentically requires thinking practices such as mindfulness...
               </p>
-              <Button round href="#pablo" color="primary">
-                <FormatAlignLeft className={classes.icons} /> Read article
+              <Button round href="#pablo" color="danger">
+              <FormatAlignLeft className={classes.icons} />
+              <Link to="/BlogPostCultivateCreativityPage" className={classes.listItem}>
+                Read article
+                </Link>
               </Button>
             </CardBody>
           </Card>

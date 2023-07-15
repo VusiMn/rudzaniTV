@@ -9,8 +9,8 @@ import GridItem from "components/Grid/GridItem.js";
 import Quote from "components/Typography/Quote.js";
 // core components
 
-import SectionSideImageAndText from 'AcademicWritingWebsite/views/BlogPostPage/Sections/SectionSideImageAndText';
-import SectionCriticalThinking from 'AcademicWritingWebsite/views/BlogPostPage/Sections/SectionCriticalThinking';
+import SectionSideImageAndText from 'AcademicWritingWebsite/views/BlogPostPage/Sections/SectionSideImageAndText.js';
+import SectionCriticalThinking from 'AcademicWritingWebsite/views/BlogPostPage/Sections/SectionCriticalThinking.js';
 
 import blog4 from "assets/img/examples/blog4.jpg";
 import blog3 from "assets/img/examples/blog3.jpg";
