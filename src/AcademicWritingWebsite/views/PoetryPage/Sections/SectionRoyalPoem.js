@@ -22,7 +22,7 @@ export default function SectionRoyalPoem() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={8} md={8}>
-          <h2 className={classes.title}>Let's Do Poetry</h2>
+          <h2 className={classes.title}>Mabudede ubumnyama kufike ukukhanya</h2>
          
 <br>
 </br>

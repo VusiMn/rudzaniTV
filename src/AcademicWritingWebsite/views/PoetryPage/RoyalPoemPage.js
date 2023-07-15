@@ -1,7 +1,6 @@
 /*eslint-disable*/ import React from "react";
 
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -16,7 +15,6 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
@@ -24,8 +22,6 @@ import SectionHeaderLinks from "AcademicWritingWebsite/views/AboutUsPage/Section
 // Sections for this page
 import SectionRoyalPoem from "./Sections/SectionRoyalPoem.js";
 import SectionPeomInfo from "./Sections/SectionPeomInfo.js";
-import SectionWork from "./Sections/SectionWork.js";
-import SectionText from "./Sections/SectionText.js";
 
 const useStyles = makeStyles(landingPageStyle);
 

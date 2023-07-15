@@ -52,7 +52,7 @@ export default function PoetryPage({ ...rest }) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>Poetry With Us.</h1>
+              <h1 className={classes.title}>Enjoy Our Poetry.</h1>
               <h4>
               Cultivating creativity to write authentically through Poetry. Find your own creative outlet to ignite your creative ability.
               </h4>

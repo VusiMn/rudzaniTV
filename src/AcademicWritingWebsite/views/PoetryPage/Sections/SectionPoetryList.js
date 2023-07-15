@@ -31,7 +31,7 @@ export default function SectionPoetryList() {
         <GridContainer>
           <GridItem md={12}>
             <h2 className={classes.title + " " + classes.textCenter}>
-             Poetry
+            Develop your voice with poetry
             </h2>
             <p className={classes.title + " " +classes.textCenter}>
             Writing creatively requires us to do something creative everyday. This may be knitting, crocheting, cooking, dancing, gardening, dressing up, styling up your hair, playing a music instrument, drawing, and painting on canvas.
@@ -63,10 +63,7 @@ export default function SectionPoetryList() {
                     <p className={classes.description}>
                     AMakhosi, Royal Leaders, Mabudede ubumnyama kufike ukukhanya
                     Let there be light in our lives,
-                    Let there be light in our communities;
-                    Let there be light in our institutions
-                    Let there be light in our planet earth 
-                    Let us be ruled by the Truth of your Light and Wisdom, Royal Leaders.
+                    Let there be light in our communities; ...
                      <br></br>
                       <Link to="/RoyalPoemPage"  className={classes.listItem}>
                       Read More
@@ -78,9 +75,9 @@ export default function SectionPoetryList() {
               <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
-                    <a href="#pablo">
-                      <img src={blog8} alt="..." />
-                    </a>
+                    <Link to="/BeLightPoemPage"  className={classes.listItem}>
+                    <img src={blog8} alt="..." />
+                      </Link>
                     <div
                       className={classes.coloredShadow}
                       style={{
@@ -91,18 +88,21 @@ export default function SectionPoetryList() {
                   </CardHeader>
                   <CardBody>
                     <Success>
-                      <h6>STARTUPS</h6>
+                      <h6>Poet: Professor Pumela Msweli; 05 May 2022</h6>
                     </Success>
                     <h4 className={classes.cardTitle}>
                       <a href="#pablo">
-                        Lyft launching cross-platform service this week
+                      Be the Light…
                       </a>
                     </h4>
                     <p className={classes.description}>
-                      Like so many organizations these days, Autodesk is a
-                      company in transition. It was until recently a traditional
-                      boxed software company selling licenses.
-                      <a href="#pablo"> Read More </a>
+                    be the light 
+that dispels the darkness of our fears, greed, corruption and illusions
+be the light that restores order in the human psyche be the light that breaks the spell that divides and fractionise us into south, north, west and east...
+                       <br></br>
+                       <Link to="/BeLightPoemPage"  className={classes.listItem}>
+                      Read More
+                      </Link>
                     </p>
                   </CardBody>
                 </Card>
@@ -124,19 +124,21 @@ export default function SectionPoetryList() {
                   <CardBody>
                     <Danger>
                       <h6>
-                        <TrendingUp /> ENTERPRISE
+                        Ignite your writing senses
                       </h6>
                     </Danger>
                     <h4 className={classes.cardTitle}>
                       <a href="#pablo">
-                        6 insights into the French Fashion landscape
+                      Cultivate creativity for writing
                       </a>
                     </h4>
                     <p className={classes.description}>
-                      Like so many organizations these days, Autodesk is a
-                      company in transition. It was until recently a traditional
-                      boxed software company selling licenses.
-                      <a href="#pablo"> Read More </a>
+                    Beautiful thoughts for beautiful writing
+Cultivating creativity to write authentically requires thinking practices such as mindfulness. In other words, we need to be fully present in our thoughts, and focus on thoughts that serve us...
+                    <br></br>
+                       <Link to="/BlogPostCultivateCreativityPage"  className={classes.listItem}>
+                      Read More
+                      </Link>
                     </p>
                   </CardBody>
                 </Card>

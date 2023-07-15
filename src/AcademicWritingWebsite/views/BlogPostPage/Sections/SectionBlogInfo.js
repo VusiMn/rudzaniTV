@@ -10,7 +10,7 @@ import Button from "components/CustomButtons/Button.js";
 import Card from "components/Card/Card.js";
 import CardAvatar from "components/Card/CardAvatar.js";
 
-import profileImage from "assets/img/faces/card-profile1-square.jpg";
+import profileImage from "assets/img/faces/professorProfile.jpg";
 
 import sectionBlogInfoStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionBlogInfoStyle.js";
 
@@ -25,11 +25,9 @@ export default function SectionBlogInfo() {
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <div className={classes.blogTags}>
-                Tags:
-                <Badge color="primary">Photography</Badge>
-                <Badge color="primary">Stories</Badge>
-                <Badge color="primary">Castle</Badge>
+                <Badge color="blue"><a href="http://www.freepik.com">Photography Designed by stories / Freepik</a></Badge>
               </div>
+              
             </GridItem>
             <GridItem xs={12} sm={6} md={6}>
               <Button color="google" round className={classes.buttons}>
@@ -52,11 +50,9 @@ export default function SectionBlogInfo() {
                 </CardAvatar>
               </GridItem>
               <GridItem xs={12} sm={8} md={8}>
-                <h4 className={classes.cardTitle}>Alec Thompson</h4>
+                <h4 className={classes.cardTitle}>Pumela Msweli</h4>
                 <p className={classes.description}>
-                  I{"'"}ve been trying to figure out the bed design for the
-                  master bedroom at our Hidden Hills compound...I like good
-                  music from Youtube.
+                My name is Pumela Msweli, I am your writing coach. You have come to the right place for ideas, insights and tips to create and write up your research projects. 
                 </p>
               </GridItem>
               <GridItem xs={12} sm={2} md={2}>

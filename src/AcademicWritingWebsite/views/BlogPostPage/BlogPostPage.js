@@ -45,7 +45,7 @@ export default function BlogPostPage() {
           color: "info"
         }}
       />
-      <Parallax image={require("assets/img/bg5.jpg")} filter="dark">
+      <Parallax image={require("assets/img/academicWritingImages/CultivatingWritingCreativity/crititcalThinkerBaner1.jpg")} filter="dark">
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem md={8} className={classes.textCenter}>
@@ -53,7 +53,7 @@ export default function BlogPostPage() {
               Thinking and writing logically
               </h1>
               <h4 className={classes.subtitle}>
-              To write coherent arguments requires that we understand different components of a logically sound argument
+              Critical thinking is a beautiful journey of solitude…
               </h4>
               <br />
               <Button color="rose" size="lg" round>
@@ -69,7 +69,6 @@ export default function BlogPostPage() {
           <SectionBlogInfo />
         </div>
       </div>
-      <SectionSimilarStories />
       <Footer
         content={
           <div>
