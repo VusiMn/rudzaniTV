@@ -15,19 +15,14 @@ import Header from "components/Header/Header.js";
 import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
 
 import { Link } from "react-router-dom";
 
 import headersStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle.js";
 
-import bg12 from "assets/img/bg12.jpg";
-import office2 from "assets/img/examples/office2.jpg";
-import dg1 from "assets/img/dg1.jpg";
-import dg2 from "assets/img/dg2.jpg";
-import dg3 from "assets/img/dg3.jpg";
+import dg1 from "assets/img/academicWritingImages/LibraryImages/library5.jpg";
+import dg2 from "assets/img/academicWritingImages/LibraryImages/library2.jpg";
+import dg3 from "assets/img/academicWritingImages/LibraryImages/library4.jpg";
 
 const useStyles = makeStyles(headersStyle);
 
