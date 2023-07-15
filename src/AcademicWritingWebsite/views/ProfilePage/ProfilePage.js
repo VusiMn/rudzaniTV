@@ -1,5 +1,6 @@
 /*eslint-disable*/
 import React from "react";
+import { Link } from "react-router-dom";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -192,6 +193,86 @@ export default function ProfilePage({ ...rest }) {
                   tabIcon: People,
                   tabContent: (
                     <div>
+                     
+                      <GridContainer justify="center">
+                        <GridItem
+                          xs={12}
+                          sm={12}
+                          md={5}
+                          className={classes.gridItem}
+                        >
+                          <Card profile plain className={classes.card}>
+                            <GridContainer>
+                              <GridItem xs={12} sm={12} md={5}>
+                                <CardHeader image plain>
+                                  <Link to="/blog-post" className={classes.listItem}>
+                                    <img src={kendall} alt="..." />
+                                  </Link>
+                                  <div
+                                    className={classes.coloredShadow}
+                                    style={{
+                                      backgroundImage: "url(" + kendall + ")",
+                                      opacity: "1"
+                                    }}
+                                  />
+                                </CardHeader>
+                              </GridItem>
+                              <GridItem xs={12} sm={12} md={7}>
+                                <CardBody plain>
+                                  <h4 className={classes.cardTitle}>
+                                   Blogs
+                                  </h4>
+                                  <Muted>
+                                    <h6>Academic readers paradise</h6>
+                                  </Muted>
+                                  <p className={classes.description}>
+                                  All thing academic writing
+                                  </p>
+                                </CardBody>
+                              </GridItem>
+                            </GridContainer>
+                          </Card>
+                        </GridItem>
+                        <GridItem
+                          xs={12}
+                          sm={12}
+                          md={5}
+                          className={classes.gridItem}
+                        >
+                          <Card profile plain className={classes.card}>
+                            <GridContainer>
+                              <GridItem xs={12} sm={12} md={5}>
+                                <CardHeader image plain>
+                                  <Link to="/PoetryPage" className={classes.listItem}>
+                                  <img src={cardProfile2Square} alt="..." />
+                                  </Link>
+                                  <div
+                                    className={classes.coloredShadow}
+                                    style={{
+                                      backgroundImage:
+                                        "url(" + cardProfile2Square + ")",
+                                      opacity: "1"
+                                    }}
+                                  />
+                                </CardHeader>
+                              </GridItem>
+                              <GridItem xs={12} sm={12} md={7}>
+                                <CardBody plain>
+                                  <h4 className={classes.cardTitle}>
+                                    Poetry
+                                  </h4>
+                                  <Muted>
+                                    <h6>Food for the soul</h6>
+                                  </Muted>
+                                  <p className={classes.description}>
+                                    Poetry to connnect in deeper level with a personal touch
+                                  </p>
+                                </CardBody>
+                              </GridItem>
+                            </GridContainer>
+                          </Card>
+                        </GridItem>
+                      </GridContainer>
                       <GridContainer justify="center">
                         <GridItem
                           xs={12}
@@ -263,85 +344,6 @@ export default function ProfilePage({ ...rest }) {
                                   </Muted>
                                   <p className={classes.description}>
                                     Story to help you find your writing journey 
-                                  </p>
-                                </CardBody>
-                              </GridItem>
-                            </GridContainer>
-                          </Card>
-                        </GridItem>
-                      </GridContainer>
-                      <GridContainer justify="center">
-                        <GridItem
-                          xs={12}
-                          sm={12}
-                          md={5}
-                          className={classes.gridItem}
-                        >
-                          <Card profile plain className={classes.card}>
-                            <GridContainer>
-                              <GridItem xs={12} sm={12} md={5}>
-                                <CardHeader image plain>
-                                  <a href="#pablo">
-                                    <img src={kendall} alt="..." />
-                                  </a>
-                                  <div
-                                    className={classes.coloredShadow}
-                                    style={{
-                                      backgroundImage: "url(" + kendall + ")",
-                                      opacity: "1"
-                                    }}
-                                  />
-                                </CardHeader>
-                              </GridItem>
-                              <GridItem xs={12} sm={12} md={7}>
-                                <CardBody plain>
-                                  <h4 className={classes.cardTitle}>
-                                   Blogs
-                                  </h4>
-                                  <Muted>
-                                    <h6>Academic readers paradise</h6>
-                                  </Muted>
-                                  <p className={classes.description}>
-                                  All thing academic writing
-                                  </p>
-                                </CardBody>
-                              </GridItem>
-                            </GridContainer>
-                          </Card>
-                        </GridItem>
-                        <GridItem
-                          xs={12}
-                          sm={12}
-                          md={5}
-                          className={classes.gridItem}
-                        >
-                          <Card profile plain className={classes.card}>
-                            <GridContainer>
-                              <GridItem xs={12} sm={12} md={5}>
-                                <CardHeader image plain>
-                                  <a href="#pablo">
-                                    <img src={cardProfile2Square} alt="..." />
-                                  </a>
-                                  <div
-                                    className={classes.coloredShadow}
-                                    style={{
-                                      backgroundImage:
-                                        "url(" + cardProfile2Square + ")",
-                                      opacity: "1"
-                                    }}
-                                  />
-                                </CardHeader>
-                              </GridItem>
-                              <GridItem xs={12} sm={12} md={7}>
-                                <CardBody plain>
-                                  <h4 className={classes.cardTitle}>
-                                    Poetry
-                                  </h4>
-                                  <Muted>
-                                    <h6>Food for the soul</h6>
-                                  </Muted>
-                                  <p className={classes.description}>
-                                    Poetry to connnect in deeper level with a personal touch
                                   </p>
                                 </CardBody>
                               </GridItem>

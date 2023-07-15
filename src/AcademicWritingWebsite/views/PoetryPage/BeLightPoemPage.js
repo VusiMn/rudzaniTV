@@ -44,7 +44,7 @@ export default function BeLightPoemPage({ ...rest }) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg8.jpg")} filter="dark">
+      <Parallax image={require("assets/img/academicWritingImages/PoetryImages/BeLight.png")} filter="dark">
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>

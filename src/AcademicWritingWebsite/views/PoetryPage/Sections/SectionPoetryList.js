@@ -15,9 +15,9 @@ import Info from "components/Typography/Info.js";
 import Success from "components/Typography/Success.js";
 import Danger from "components/Typography/Danger.js";
 
-import blog6 from "assets/img/examples/blog6.jpg";
-import blog8 from "assets/img/examples/blog8.jpg";
-import blog7 from "assets/img/examples/blog7.jpg";
+import blog6 from "assets/img/academicWritingImages/PoetryImages/Queen.JPG";
+import blog8 from "assets/img/academicWritingImages/PoetryImages/BeLight.png";
+import blog7 from "assets/img/academicWritingImages/LibraryImages/library1.jpg";
 
 import sectionSimilarStoriesStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionSimilarStoriesStyle.js";
 
