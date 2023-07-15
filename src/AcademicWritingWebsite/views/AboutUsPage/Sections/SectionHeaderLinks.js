@@ -126,6 +126,19 @@ export default function HeaderLinks(props) {
           </Link>
       </Button>
     </ListItem>
+
+    <ListItem className={classes.listItem}>
+      <Button
+        href="#"
+        className={classes.navLink}
+        onClick={e => e.preventDefault()}
+        color="transparent"
+      >
+         <Link to="/PoetryPage"  className={classes.listItem}>
+         Poetry
+          </Link>
+      </Button>
+    </ListItem>
   
     <ListItem className={classes.listItem}>
       <Button

@@ -16,31 +16,12 @@ import sectionBlogInfoStyle from "assets/jss/material-kit-pro-react/views/blogPo
 
 const useStyles = makeStyles(sectionBlogInfoStyle);
 
-export default function SectionBlogInfo() {
+export default function SectionPeomInfo() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={10} md={8}>
-          <GridContainer>
-            <GridItem xs={12} sm={6} md={6}>
-              <div className={classes.blogTags}>
-                <Badge color="blue"><a href="http://www.freepik.com">Photography Designed by stories / Freepik</a></Badge>
-              </div>
-              
-            </GridItem>
-            <GridItem xs={12} sm={6} md={6}>
-              <Button color="google" round className={classes.buttons}>
-                <i className="fab fa-google" /> 232
-              </Button>
-              <Button color="twitter" round className={classes.buttons}>
-                <i className="fab fa-twitter" /> 910
-              </Button>
-              <Button color="facebook" round className={classes.buttons}>
-                <i className="fab fa-facebook-square" /> 872
-              </Button>
-            </GridItem>
-          </GridContainer>
           <hr />
           <Card plain profile className={classes.card}>
             <GridContainer>
@@ -52,7 +33,7 @@ export default function SectionBlogInfo() {
               <GridItem xs={12} sm={8} md={8}>
                 <h4 className={classes.cardTitle}>Pumela Msweli</h4>
                 <p className={classes.description}>
-                My name is Pumela Msweli, I am your writing coach. You have come to the right place for ideas, insights and tips to create and write up your research projects. 
+                Writing creatively requires us to do something creative everyday. This may be poetry, knitting, crocheting, cooking, dancing, gardening, dressing up, styling up your hair, playing a music instrument, drawing, and painting on canvas.
                 </p>
               </GridItem>
               <GridItem xs={12} sm={2} md={2}>

@@ -31,6 +31,7 @@ import ContactUsPage from "views/ContactUsPage/ContactUsPage.js";
 import EcommercePage from "views/EcommercePage/EcommercePage.js";
 import LandingPage from "AcademicWritingWebsite/views/LandingPage/LandingPage.js";
 import PoetryPage from "AcademicWritingWebsite/views/PoetryPage/PoetryPage.js";
+import RoyalPoemPage from "AcademicWritingWebsite/views/PoetryPage/RoyalPoemPage.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 import PresentationPage from "views/PresentationPage/PresentationPage.js";
 import PricingPage from "views/PricingPage/PricingPage.js";
@@ -51,6 +52,7 @@ ReactDOM.render(
       <Route path="/blog-posts" component={BlogPostsPage} />
       <Route path="/BlogPostCultivateCreativityPage" component={BlogPostCultivateCreativityPage} />
       <Route path="/PoetryPage" component={PoetryPage} />
+      <Route path="/RoyalPoemPage" component={RoyalPoemPage} />
       <Route path="/components" component={ComponentsPage} />
       <Route path="/contact-us" component={ContactUsPage} />
       <Route path="/ecommerce-page" component={EcommercePage} />

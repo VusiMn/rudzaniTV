@@ -16,7 +16,7 @@ import SectionTestimonials from "AcademicWritingWebsite/views/PoetryPage/Section
 
 const useStyles = makeStyles(productStyle);
 
-export default function SectionProduct() {
+export default function SectionRoyalPoem() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
@@ -24,40 +24,33 @@ export default function SectionProduct() {
         <GridItem xs={12} sm={8} md={8}>
           <h2 className={classes.title}>Let's Do Poetry</h2>
          
-          <small className={classes.description}>
-          UNISA SBL South African Royal Development Foundations; Traditional Leaders Empowerment Partnershp, Afrucab Kingdoms Diaspora Alliance
-Mabudede ubumnyama kufike ukukhanya
-Poet: Professor Pumela Msweli; 16 June 2023
-          </small>
+<br>
+</br>
 
-<br>
-</br>
-<br>
-</br>
-          <p className={classes.description}>
+<h5 className={classes.description}>
           AMakhosi, Royal Leaders, Mabudede ubumnyama kufike ukukhanya
 Let there be light in our lives,
 Let there be light in our communities;
 Let there be light in our institutions
 Let there be light in our planet earth 
 Let us be ruled by the Truth of your Light and Wisdom, Royal Leaders
-          </p>
+          </h5>
 
-          <p className={classes.description}>
+          <h5 className={classes.description}>
 
 Mabudede ubumnyama kufike ukukhanya
 Ubukumkani of Royal Leadership mabufike
 Exintliziyweni zethu, ezingqondweni zethu, emiphefumlweni yethu (in hour hearts, in our minds and in our souls)
-            </p>
+</h5>
 
-           <p className={classes.description}>
+            <h5 className={classes.description}>
            Royal Leaders, brighten us up with your shine
 Fire us up with your shining light of indigenous wisdom
 Cast your leadership light in the shadows lurking
 In our institutions, in our country; in out continent, in our planet
-          </p>
+</h5>
 
-          <p className={classes.description}>
+          <h5 className={classes.description}>
           AMakhosi, Royal Leadership, Cast your light in the heart 
 of our grieving Mother earth
 A planet grieving the pain suffered by her children;
@@ -70,79 +63,79 @@ the dragons who keep on sapping the blood and vitality of
 our mother earth and her children;
 The dragon that takes many forms:
 Corruption, poverty, inequality;Covid-19, conflicts, misinformation, disinformation, lies, wars and battle
-          </p>
+</h5>
 
-          <p className={classes.description}>
+          <h5 className={classes.description}>
 Mabudede ubumnyama
-          </p>
+</h5>
 
-          <p className={classes.description}>
+          <h5 className={classes.description}>
           Kufike ukukhanya
-          </p>
+          </h5>
 
-          <p className={classes.description}>
+          <h5 className={classes.description}>
           Sikhanyiseleni Amakhosi (light our path)
-          </p>
-          <p className={classes.description}>
+          </h5>
+          <h5 className={classes.description}>
           Be the beacon of light in our institutions, in our communities
-          </p>
-          <p className={classes.description}>
+          </h5>
+          <h5 className={classes.description}>
           Together, let us reclaim our universal values, of ubuntu,
-          </p>
-          <p className={classes.description}>
+          </h5>
+          <h5 className={classes.description}>
           Ukuzithoba,nokuthobeka, uthando olunzulu for the human race
-          </p>
-          <p className={classes.description}>
+          </h5>
+          <h5 className={classes.description}>
           Steve Biko implored us to go back to being conscious of who we are; the Children of Africa cried out in June 1976,  as they took on to the streets fighting for their dignity and their culture
-          </p>
-          <p className={classes.description}>
+          </h5>
+          <h5 className={classes.description}>
           Thomas Sankara, Lumumba, Queen Nzinga, Queen Amina of Zaria in Nigeria; Asantewaa, Queen Mother of Ejisu of Ashanti people in modern-day Ghana; Mama Madikizela Winnie Mandela; Govan Mbeki, Gcaleka KaPhalo, Khawuta
-          </p>
-          <p className={classes.description}>
+          </h5>
+          <h5 className={classes.description}>
           Hintsa Aa! Zanzolo,
-          </p>
-          <p className={classes.description}>Sarhili,  Gwebinkumbi KaSigcawu,</p>
+          </h5>
+          <h5 className={classes.description}>Sarhili,  Gwebinkumbi KaSigcawu, </h5>
 
-          <p className={classes.description}>Ngangomhlaba </p>
+          <h5 className={classes.description}>Ngangomhlaba  </h5>
 
-          <p className={classes.description}>Zwelidumile,</p>
-          <p className={classes.description}>King Sabatha</p>
-          <p className={classes.description}>Ah Dalindyebo</p>
-          <p className={classes.description}>Queen Nokwanda Dalindyebo</p>
-          <p className={classes.description}>Kind Cetywayo</p>
-          <p className={classes.description}>King Cetshwayo</p>
+          <h5 className={classes.description}>Zwelidumile, </h5>
+          <h5 className={classes.description}>King Sabatha</h5>
+          <h5 className={classes.description}>Ah Dalindyebo </h5>
+          <h5 className={classes.description}>Queen Nokwanda Dalindyebo </h5>
+          <h5 className={classes.description}>Kind Cetywayo </h5>
+          <h5 className={classes.description}>King Cetshwayo </h5>
 
-          <p className={classes.description}>Queen Zulu</p>
-          <p className={classes.description}>
+          <h5 className={classes.description}>Queen Zulu </h5>
+          <h5 className={classes.description}>
          All Royal leaders, your majesties present and departed
-         </p>
+         </h5>
         
-         <p className={classes.description}>Let us be the warriors of truth</p>
-         <p className={classes.description}>Sibe ngamagokra enyani;</p>
-         <p className={classes.description}>
+         <h5 className={classes.description}>Let us be the warriors of truth </h5>
+         <h5 className={classes.description}>Sibe ngamagokra enyani; </h5>
+         <h5 className={classes.description}>
          Let today define our future
-         </p>
+         </h5>
          
-         <p className={classes.description}>
+         <h5 className={classes.description}>
          Let us understand the dark side of the warrior archetype
-          </p>
+         </h5>
 
-          <p className={classes.description}>
+          <h5 className={classes.description}>
           That narcistic aspect of our human nature that thrives on low vibrational frequency of conflict
-          </p>
-          <p className={classes.description}>
+          </h5>
+          <h5 className={classes.description}>
           Let us graduate from the conflictive nature
-          </p>
-          <p className={classes.description}>
+          </h5>
+          <h5 className={classes.description}>
           Let us bring back harmony and peace in our institutions, Countries and Africa. Let us dispel the spirit that divides us
-          </p>
-          <p className={classes.description}>
+          </h5>
+          <h5 className={classes.description}>
           Mirrima Makheba in her song sang: “unify us, don’t divide us…”
-          </p>
-          <p className={classes.description}>
+          </h5>
+          <h5 className={classes.description}>
           AMakhosi assist us to  summon
-          </p>
-          <p className={classes.description}>
+          </h5>
+          <h5 className={classes.description}>
           the collective light of the universe
 Royal leadership, we are seeking your light, your wisdom; 
 Let the light inside you, me and all of us
@@ -157,36 +150,36 @@ in the form of over consumption of things
 that make us of poorer minds and stature;
 over consumption of things we cannot even produce;
 Enough is enough
-          </p>
-          <p className={classes.description}>
+</h5>
+          <h5 className={classes.description}>
           Mabudede ubumnyama kufike ukukhanya
-          </p>
+          </h5>
 
-          <p className={classes.description}>
+          <h5 className={classes.description}>
           Makhosi, save us, from the darkness in our hearts
-          </p>
+          </h5>
 
-          <p className={classes.description}>
+          <h5 className={classes.description}>
           Save us from the darkness of our emotions
-          </p>
+          </h5>
 
-          <p className={classes.description}>
+          <h5 className={classes.description}>
           It is only your light,  Lukanyo of the Royal Leadership that can restore this world back to 
 Its former glory of beauty, harmony,
-          </p>
+</h5>
 
-          <p className={classes.description}>
+          <h5 className={classes.description}>
           Peace and abundance.
-          </p>
+          </h5>
 
-          <p className={classes.description}>
+          <h5 className={classes.description}>
           Amakhosi, mayibuye I Africa! mabudede ubumnyama kufike ukukhanya!
-          </p>
+          </h5>
 
         </GridItem>
       </GridContainer>
 
-      <SectionTestimonials/>
+    
       <div>
       </div>
     </div>
