@@ -81,30 +81,7 @@ export default function ProfilePage({ ...rest }) {
                 <div className={classes.name}>
                   <h3 className={classes.title}>Prof. Pumela Msweli</h3>
                   <h6>Academic writing coach</h6>
-                  <Button
-                    justIcon
-                    simple
-                    color="dribbble"
-                    className={classes.margin5}
-                  >
-                    <i className={classes.socials + " fab fa-dribbble"} />
-                  </Button>
-                  <Button
-                    justIcon
-                    simple
-                    color="twitter"
-                    className={classes.margin5}
-                  >
-                    <i className={classes.socials + " fab fa-twitter"} />
-                  </Button>
-                  <Button
-                    justIcon
-                    simple
-                    color="pinterest"
-                    className={classes.margin5}
-                  >
-                    <i className={classes.socials + " fab fa-pinterest"} />
-                  </Button>
+                  <SectionSocialMedia/>
                 </div>
               </div>
               <div className={classes.follow}>

@@ -9,7 +9,7 @@ import Badge from "components/Badge/Badge.js";
 import Button from "components/CustomButtons/Button.js";
 import Card from "components/Card/Card.js";
 import CardAvatar from "components/Card/CardAvatar.js";
-
+import SectionSocialMedia from "../../AboutUsPage/Sections/SectionsSocialMedia.js";
 import profileImage from "assets/img/faces/professorProfile.jpg";
 
 import sectionBlogInfoStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionBlogInfoStyle.js";
@@ -30,15 +30,7 @@ export default function SectionBlogInfo() {
               
             </GridItem>
             <GridItem xs={12} sm={6} md={6}>
-              <Button color="google" round className={classes.buttons}>
-                <i className="fab fa-google" /> 232
-              </Button>
-              <Button color="twitter" round className={classes.buttons}>
-                <i className="fab fa-twitter" /> 910
-              </Button>
-              <Button color="facebook" round className={classes.buttons}>
-                <i className="fab fa-facebook-square" /> 872
-              </Button>
+            <SectionSocialMedia/>
             </GridItem>
           </GridContainer>
           <hr />
