@@ -21,7 +21,7 @@ import { Link } from "react-router-dom";
 import headersStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle.js";
 
 import dg1 from "assets/img/academicWritingImages/LibraryImages/library5.jpg";
-import dg2 from "assets/img/academicWritingImages/LibraryImages/library2.jpg";
+import dg2 from "assets/img/academicWritingImages/LibraryImages/study-group-learning-library.jpg";
 import dg3 from "assets/img/academicWritingImages/LibraryImages/library4.jpg";
 
 const useStyles = makeStyles(headersStyle);
@@ -145,21 +145,49 @@ export default function SectionHeader({ ...rest }) {
                   <GridItem xs={12} sm={6} md={6}>
                     <h1 className={classes.title}>Welcome Academic Writing Authors</h1>
                     <h4>
-                    Thought leaders writing responsibly for durable impact academic research the future is indeed in your hands. 
+                    Thought leaders writing responsibly for durable impact. The future of academic research and writing is in your hands. 
                     </h4>
                     <br />
                     <Button color="danger" size="lg">
+                    <Link to="/BlogPostCultivateCreativityPage"  className={classes.listItem}>
                       Read more
+                      </Link>
                     </Button>
-                    <Button justIcon color="white" simple>
+                  
+                    <Button 
+                      href="https://scholar.google.com/citations?user=YNeIukoAAAAJ&hl=en"
+                      target="_blank"
+                      color="white" simple size="lg" justIcon>
+                        <i className="fab fa-google-plus-g" />
+                      </Button>
+                      <Button
+                       href="https://www.youtube.com/channel/UCWUGJB-Cw8lpVba1R1MSvmw"
+                       target="_blank"
+                      color="white" simple size="lg" justIcon>
+                        <i className="fab fa-youtube" />
+                      </Button>
+
+                      <Button
+                       href="https://www.linkedin.com/in/profpumelamsweli/?originalSubdomain=za"
+                       target="_blank"
+                      color="white" simple  size="lg" justIcon>
+                        <i className="fab fa-linkedin" />
+                      </Button>
+                      
+                    <Button 
+                    href="https://twitter.com/UnisaSBL/status/1674381882790666241"
+                    target="_blank"
+                    justIcon color="white" simple size="lg">
                       <i className="fab fa-twitter" />
                     </Button>
-                    <Button justIcon color="white" simple>
+                    <Button 
+                     href="https://www.facebook.com/UNISASBL/videos/prof-pumela-msweli-picks-up-from-the-series-on-writing-and-further-explores-issu/461182979264071/"
+                     target="_blank"
+                    justIcon color="white" simple size="lg">
                       <i className="fab fa-facebook-square" />
                     </Button>
-                    <Button justIcon color="white" simple>
-                      <i className="fab fa-get-pocket" />
-                    </Button>
+                  
+                   
                   </GridItem>
                 </GridContainer>
               </div>
@@ -184,28 +212,45 @@ export default function SectionHeader({ ...rest }) {
                       classes.textCenter
                     )}
                   >
-                    <h1 className={classes.title}>Material Kit PRO React</h1>
+                    <h1 className={classes.title}>Think and write authentically</h1>
                     <h4>
-                      Dolce & Gabbana is a luxury Italian fashion house founded
-                      in 1985 in Legnano by Italian designers Domenico Dolce and
-                      Stefano Gabbana. The two met in Milan in 1980 and designed
-                      for the same fashion house.
+                    Cultivating creativity to write authentically through Poetry or even better find your own creative outlet to ignite your creative ability.
                     </h4>
                     <br />
                     <h6>Connect with us on:</h6>
                     <div>
-                      <Button color="white" simple size="lg" justIcon>
-                        <i className="fab fa-twitter" />
-                      </Button>
-                      <Button color="white" simple size="lg" justIcon>
-                        <i className="fab fa-facebook-square" />
-                      </Button>
-                      <Button color="white" simple size="lg" justIcon>
+                    <Button 
+                      href="https://scholar.google.com/citations?user=YNeIukoAAAAJ&hl=en"
+                      target="_blank"
+                      color="white" simple size="lg" justIcon>
                         <i className="fab fa-google-plus-g" />
                       </Button>
-                      <Button color="white" simple size="lg" justIcon>
-                        <i className="fab fa-instagram" />
+                      <Button
+                       href="https://www.youtube.com/channel/UCWUGJB-Cw8lpVba1R1MSvmw"
+                       target="_blank"
+                      color="white" simple size="lg" justIcon>
+                        <i className="fab fa-youtube" />
                       </Button>
+
+                      <Button
+                       href="https://www.linkedin.com/in/profpumelamsweli/?originalSubdomain=za"
+                       target="_blank"
+                      color="white" simple size="lg" justIcon>
+                        <i className="fab fa-linkedin" />
+                      </Button>
+                      <Button
+                       href="https://twitter.com/UnisaSBL/status/1674381882790666241"
+                       target="_blank"
+                      color="white" simple size="lg" justIcon>
+                        <i className="fab fa-twitter" />
+                      </Button>
+                      <Button 
+                      href="https://www.facebook.com/UNISASBL/videos/prof-pumela-msweli-picks-up-from-the-series-on-writing-and-further-explores-issu/461182979264071/"
+                      target="_blank"
+                      color="white" simple size="lg" justIcon>
+                        <i className="fab fa-facebook-square" />
+                      </Button>
+                     
                     </div>
                   </GridItem>
                 </GridContainer>
@@ -227,14 +272,13 @@ export default function SectionHeader({ ...rest }) {
                     md={7}
                     className={classNames(classes.mlAuto, classes.textRight)}
                   >
-                    <h1 className={classes.title}>New Collection 50% Off</h1>
+                    <h1 className={classes.title}>contributing to knowledge</h1>
                     <h4>
-                      There{"'"}s no doubt that Tesla is delighted with the
-                      interest, but the data also raises a few questions. How
-                      long will it take for Tesla to fulfill all those extra
-                      orders?
+                     Your academic research must be published make durable impact
                     </h4>
                     <br />
+                    {
+                      /*** 
                     <div>
                       <Button color="white" simple size="lg">
                         <Share /> Share Offer
@@ -242,6 +286,42 @@ export default function SectionHeader({ ...rest }) {
                       <Button color="danger" size="lg">
                         <ShoppingCart /> Shop now
                       </Button>
+                    </div>
+                    **/}
+
+                    <div>
+                    <Button 
+                      href="https://scholar.google.com/citations?user=YNeIukoAAAAJ&hl=en"
+                      target="_blank"
+                      color="white" simple size="lg" justIcon>
+                        <i className="fab fa-google-plus-g" />
+                      </Button>
+                      <Button
+                       href="https://www.youtube.com/channel/UCWUGJB-Cw8lpVba1R1MSvmw"
+                       target="_blank"
+                      color="white" simple size="lg" justIcon>
+                        <i className="fab fa-youtube" />
+                      </Button>
+
+                      <Button
+                       href="https://www.linkedin.com/in/profpumelamsweli/?originalSubdomain=za"
+                       target="_blank"
+                      color="white" simple size="lg" justIcon>
+                        <i className="fab fa-linkedin" />
+                      </Button>
+                      <Button
+                       href="https://twitter.com/UnisaSBL/status/1674381882790666241"
+                       target="_blank"
+                      color="white" simple size="lg" justIcon>
+                        <i className="fab fa-twitter" />
+                      </Button>
+                      <Button 
+                      href="https://www.facebook.com/UNISASBL/videos/prof-pumela-msweli-picks-up-from-the-series-on-writing-and-further-explores-issu/461182979264071/"
+                      target="_blank"
+                      color="white" simple size="lg" justIcon>
+                        <i className="fab fa-facebook-square" />
+                      </Button>
+                     
                     </div>
                   </GridItem>
                 </GridContainer>
