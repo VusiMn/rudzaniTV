@@ -53,7 +53,7 @@ export default function BlogPostThinkingAndWritingLogicalPage() {
               </h4>
               <br />
               <Button color="rose" size="lg" round>
-                <FormatAlignLeft /> Read Article
+                <FormatAlignLeft /> Read Blog
               </Button>
             </GridItem>
           </GridContainer>

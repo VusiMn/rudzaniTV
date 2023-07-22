@@ -57,7 +57,7 @@ export default function BlogPostCultivateCreativityPage() {
               </h4>
               <br />
               <Button color="rose" size="lg" round>
-                <FormatAlignLeft /> Read Article
+                <FormatAlignLeft /> Read Blog
               </Button>
             </GridItem>
           </GridContainer>
