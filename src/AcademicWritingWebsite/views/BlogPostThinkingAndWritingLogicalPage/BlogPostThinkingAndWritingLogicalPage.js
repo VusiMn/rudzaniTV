@@ -23,7 +23,7 @@ import SectionHeaderLinks from "AcademicWritingWebsite/views/AboutUsPage/Section
 
 const useStyles = makeStyles(blogPostPageStyle);
 
-export default function BlogPostPage() {
+export default function BlogPostThinkingAndWritingLogicalPage() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;

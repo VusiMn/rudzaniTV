@@ -23,7 +23,7 @@ import "assets/scss/material-kit-pro-react.scss?v=1.9.0";
 
 // pages for this product
 import AboutUsPage from "AcademicWritingWebsite/views/AboutUsPage/AboutUsPage.js";
-import BlogPostPage from "AcademicWritingWebsite/views/BlogPostPage/BlogPostPage.js";
+import ThinkingAndWritingLogicalPage from "AcademicWritingWebsite/views/BlogPostThinkingAndWritingLogicalPage/BlogPostThinkingAndWritingLogicalPage.js";
 import BlogPostCultivateCreativityPage from "AcademicWritingWebsite/views/BlogPostCultivateCreativityPage/BlogPostCultivateCreativityPage.js";
 import BlogPostsPage from "AcademicWritingWebsite/views/BlogPostsPage/BlogPostsPage.js";
 import BeLightPoemPage from "AcademicWritingWebsite/views/PoetryPage/BeLightPoemPage.js";
@@ -50,7 +50,7 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/about-us"  component={PresentationPage} />
-      <Route path="/blog-post" component={BlogPostPage} />
+      <Route path="/ThinkingAndWritingLogicalPage" component={ThinkingAndWritingLogicalPage} />
       <Route path="/blog-posts" component={BlogPostsPage} />
       <Route path="/BlogPostCultivateCreativityPage" component={BlogPostCultivateCreativityPage} />
       <Route path="/PoetryPage" component={PoetryPage} />

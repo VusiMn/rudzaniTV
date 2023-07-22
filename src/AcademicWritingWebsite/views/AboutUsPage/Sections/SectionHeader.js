@@ -79,8 +79,8 @@ export default function SectionHeader({ ...rest }) {
                   color="transparent"
                 >
             
-                 <Link to="/blog-posts" className={classes.listItem}>
-                 Blogs
+                 <Link to="/ArticlesPage" className={classes.listItem}>
+                 Articles
                 </Link>
                 </Button>
               </ListItem>
@@ -91,7 +91,7 @@ export default function SectionHeader({ ...rest }) {
                   onClick={e => e.preventDefault()}
                   color="transparent"
                 >
-                  <Link to="/blog-post" className={classes.listItem}>
+                  <Link to="/ThinkingAndWritingLogicalPage" className={classes.listItem}>
                       Thinking & Logical Writing   
                     </Link>
                 </Button>
@@ -121,6 +121,7 @@ export default function SectionHeader({ ...rest }) {
           </Link>
       </Button>
     </ListItem>
+        {/*
               <ListItem className={classes.listItem}>
                 <Button
                   href="#pablo"
@@ -131,6 +132,7 @@ export default function SectionHeader({ ...rest }) {
                   Contact us
                 </Button>
               </ListItem>
+          */}
             </List>
           }
         />

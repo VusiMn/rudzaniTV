@@ -9,15 +9,12 @@ import GridItem from "components/Grid/GridItem.js";
 import Quote from "components/Typography/Quote.js";
 // core components
 
-import SectionSideImageAndText from 'AcademicWritingWebsite/views/BlogPostPage/Sections/SectionSideImageAndText.js';
-import SectionCriticalThinking from 'AcademicWritingWebsite/views/BlogPostPage/Sections/SectionCriticalThinking.js';
+import SectionCriticalThinking from './SectionCriticalThinking.js';
 
 import blog3 from "assets/img/academicWritingImages/CultivatingWritingCreativity/crititcalThinkerBaner1.png";
 import blog4 from "assets/img/academicWritingImages/CultivatingWritingCreativity/beautifulworkplace.jpg";
 import blog1 from "assets/img/academicWritingImages/CultivatingWritingCreativity/Thinking1.jpg";
 import thinkDifferentImage from "assets/img/scientificDiagrams/thinkDifferently1.png";
-import InfoArea from "components/InfoArea/InfoArea.js";
-import Extension from "@material-ui/icons/Extension";
 import sectionTextStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionTextStyle.js";
 
 const useStyles = makeStyles(sectionTextStyle);

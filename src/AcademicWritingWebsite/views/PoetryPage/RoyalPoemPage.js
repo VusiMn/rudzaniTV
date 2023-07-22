@@ -60,7 +60,7 @@ Poet: Professor Pumela Msweli; 16 June 2023
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="https://www.youtube.com/channel/UCWUGJB-Cw8lpVba1R1MSvmw"
                 target="_blank"
               >
                 <i className="fas fa-play" />
