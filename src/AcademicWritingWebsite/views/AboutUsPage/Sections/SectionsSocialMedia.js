@@ -1,8 +1,10 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-
+// @material-ui/core components
+import { makeStyles } from "@material-ui/core/styles";
 import Button from "components/CustomButtons/Button.js";
+import headersStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/headersStyle.js";
 const useStyles = makeStyles(headersStyle);
 
 export default function SectionSocialMedia() {

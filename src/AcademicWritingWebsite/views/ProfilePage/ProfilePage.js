@@ -28,6 +28,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import Clearfix from "components/Clearfix/Clearfix.js";
 import Button from "components/CustomButtons/Button.js";
 import SectionResume from "AcademicWritingWebsite/views/ProfilePage/AboutUsPage/Sections/SectionResume.js";
+import SectionSocialMedia from "../AboutUsPage/Sections/SectionsSocialMedia";
 import SectionHeaderLinks from "AcademicWritingWebsite/views/AboutUsPage/Sections/SectionHeaderLinks.js";
 import podcastImg from "assets/img/academicWritingImages/LibraryImages/podcast.jpg";
 import youtubeImg from "assets/img/academicWritingImages/LibraryImages/youtube.png";

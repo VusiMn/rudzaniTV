@@ -23,6 +23,7 @@ import headersStyle from "assets/jss/material-kit-pro-react/views/sectionsSectio
 import dg1 from "assets/img/academicWritingImages/LibraryImages/library5.jpg";
 import dg2 from "assets/img/academicWritingImages/LibraryImages/study-group-learning-library.jpg";
 import dg3 from "assets/img/academicWritingImages/LibraryImages/library4.jpg";
+import SectionSocialMedia from "./SectionsSocialMedia.js";
 
 const useStyles = makeStyles(headersStyle);
 
@@ -152,42 +153,8 @@ export default function SectionHeader({ ...rest }) {
                     <Link to="/BlogPostCultivateCreativityPage"  className={classes.listItem}>
                       Read more
                       </Link>
-                    </Button>
-                  
-                    <Button 
-                      href="https://scholar.google.com/citations?user=YNeIukoAAAAJ&hl=en"
-                      target="_blank"
-                      color="white" simple size="lg" justIcon>
-                        <i className="fab fa-google-plus-g" />
-                      </Button>
-                      <Button
-                       href="https://www.youtube.com/channel/UCWUGJB-Cw8lpVba1R1MSvmw"
-                       target="_blank"
-                      color="white" simple size="lg" justIcon>
-                        <i className="fab fa-youtube" />
-                      </Button>
-
-                      <Button
-                       href="https://www.linkedin.com/in/profpumelamsweli/?originalSubdomain=za"
-                       target="_blank"
-                      color="white" simple  size="lg" justIcon>
-                        <i className="fab fa-linkedin" />
-                      </Button>
-                      
-                    <Button 
-                    href="https://twitter.com/UnisaSBL/status/1674381882790666241"
-                    target="_blank"
-                    justIcon color="white" simple size="lg">
-                      <i className="fab fa-twitter" />
-                    </Button>
-                    <Button 
-                     href="https://www.facebook.com/UNISASBL/videos/prof-pumela-msweli-picks-up-from-the-series-on-writing-and-further-explores-issu/461182979264071/"
-                     target="_blank"
-                    justIcon color="white" simple size="lg">
-                      <i className="fab fa-facebook-square" />
-                    </Button>
-                  
-                   
+                    </Button>                
+                    <SectionSocialMedia/>                  
                   </GridItem>
                 </GridContainer>
               </div>
@@ -218,40 +185,7 @@ export default function SectionHeader({ ...rest }) {
                     </h4>
                     <br />
                     <h6>Connect with us on:</h6>
-                    <div>
-                    <Button 
-                      href="https://scholar.google.com/citations?user=YNeIukoAAAAJ&hl=en"
-                      target="_blank"
-                      color="white" simple size="lg" justIcon>
-                        <i className="fab fa-google-plus-g" />
-                      </Button>
-                      <Button
-                       href="https://www.youtube.com/channel/UCWUGJB-Cw8lpVba1R1MSvmw"
-                       target="_blank"
-                      color="white" simple size="lg" justIcon>
-                        <i className="fab fa-youtube" />
-                      </Button>
-
-                      <Button
-                       href="https://www.linkedin.com/in/profpumelamsweli/?originalSubdomain=za"
-                       target="_blank"
-                      color="white" simple size="lg" justIcon>
-                        <i className="fab fa-linkedin" />
-                      </Button>
-                      <Button
-                       href="https://twitter.com/UnisaSBL/status/1674381882790666241"
-                       target="_blank"
-                      color="white" simple size="lg" justIcon>
-                        <i className="fab fa-twitter" />
-                      </Button>
-                      <Button 
-                      href="https://www.facebook.com/UNISASBL/videos/prof-pumela-msweli-picks-up-from-the-series-on-writing-and-further-explores-issu/461182979264071/"
-                      target="_blank"
-                      color="white" simple size="lg" justIcon>
-                        <i className="fab fa-facebook-square" />
-                      </Button>
-                     
-                    </div>
+                    <SectionSocialMedia/>
                   </GridItem>
                 </GridContainer>
               </div>
@@ -288,41 +222,7 @@ export default function SectionHeader({ ...rest }) {
                       </Button>
                     </div>
                     **/}
-
-                    <div>
-                    <Button 
-                      href="https://scholar.google.com/citations?user=YNeIukoAAAAJ&hl=en"
-                      target="_blank"
-                      color="white" simple size="lg" justIcon>
-                        <i className="fab fa-google-plus-g" />
-                      </Button>
-                      <Button
-                       href="https://www.youtube.com/channel/UCWUGJB-Cw8lpVba1R1MSvmw"
-                       target="_blank"
-                      color="white" simple size="lg" justIcon>
-                        <i className="fab fa-youtube" />
-                      </Button>
-
-                      <Button
-                       href="https://www.linkedin.com/in/profpumelamsweli/?originalSubdomain=za"
-                       target="_blank"
-                      color="white" simple size="lg" justIcon>
-                        <i className="fab fa-linkedin" />
-                      </Button>
-                      <Button
-                       href="https://twitter.com/UnisaSBL/status/1674381882790666241"
-                       target="_blank"
-                      color="white" simple size="lg" justIcon>
-                        <i className="fab fa-twitter" />
-                      </Button>
-                      <Button 
-                      href="https://www.facebook.com/UNISASBL/videos/prof-pumela-msweli-picks-up-from-the-series-on-writing-and-further-explores-issu/461182979264071/"
-                      target="_blank"
-                      color="white" simple size="lg" justIcon>
-                        <i className="fab fa-facebook-square" />
-                      </Button>
-                     
-                    </div>
+                    <SectionSocialMedia/>
                   </GridItem>
                 </GridContainer>
               </div>
