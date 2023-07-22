@@ -1,6 +1,5 @@
 /*eslint-disable*/ import React from "react";
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
@@ -10,7 +9,6 @@ import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -19,8 +17,6 @@ import Button from "components/CustomButtons/Button.js";
 // sections for this page
 import SectionText from "./Sections/SectionText.js";
 import SectionBlogInfo from "./Sections/SectionBlogInfo.js";
-import SectionComments from "./Sections/SectionComments.js";
-import SectionSimilarStories from "./Sections/SectionSimilarStories.js";
 
 import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
 import SectionHeaderLinks from "AcademicWritingWebsite/views/AboutUsPage/Sections/SectionHeaderLinks.js";

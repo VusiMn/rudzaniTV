@@ -27,6 +27,7 @@ import BlogPostPage from "AcademicWritingWebsite/views/BlogPostPage/BlogPostPage
 import BlogPostCultivateCreativityPage from "AcademicWritingWebsite/views/BlogPostCultivateCreativityPage/BlogPostCultivateCreativityPage.js";
 import BlogPostsPage from "AcademicWritingWebsite/views/BlogPostsPage/BlogPostsPage.js";
 import BeLightPoemPage from "AcademicWritingWebsite/views/PoetryPage/BeLightPoemPage.js";
+import ArticlesPage from "AcademicWritingWebsite/views/ArticlesPage/ArticlesPage.js";
 import ComponentsPage from "views/ComponentsPage/ComponentsPage.js";
 import ContactUsPage from "views/ContactUsPage/ContactUsPage.js";
 import EcommercePage from "views/EcommercePage/EcommercePage.js";
@@ -55,6 +56,7 @@ ReactDOM.render(
       <Route path="/PoetryPage" component={PoetryPage} />
       <Route path="/BeLightPoemPage" component={BeLightPoemPage} />
       <Route path="/RoyalPoemPage" component={RoyalPoemPage} />
+      <Route path="/ArticlesPage" component={ArticlesPage} />
       <Route path="/components" component={ComponentsPage} />
       <Route path="/contact-us" component={ContactUsPage} />
       <Route path="/ecommerce-page" component={EcommercePage} />

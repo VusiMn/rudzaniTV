@@ -1,7 +1,5 @@
-/*eslint-disable*/ import React from "react";
-// nodejs library to set properties for components
-// nodejs library that concatenates classes
-import classNames from "classnames";
+/*eslint-disable*/
+import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
@@ -13,17 +11,16 @@ import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
+// sections for this page
+import SectionPills from "./Sections/SectionPills.js";
 
-import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
-
-// Sections for this page
-import SectionPoetryList from "./Sections/SectionPoetryList.js";
+import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.js";
 import SectionHeaderLinks from "AcademicWritingWebsite/views/AboutUsPage/Sections/SectionHeaderLinks.js";
-const useStyles = makeStyles(landingPageStyle);
 
-export default function PoetryPage({ ...rest }) {
+const useStyles = makeStyles(blogPostsPageStyle);
+
+export default function ArticlesPage() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -32,41 +29,29 @@ export default function PoetryPage({ ...rest }) {
   return (
     <div>
       <Header
-        color="transparent"
-        brand="Academic Writing"
+        brand="Academic writing"
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
+        color="transparent"
         changeColorOnScroll={{
-          height: 300,
+          height: 400,
           color: "info"
         }}
-        {...rest}
-      />
-      <Parallax image={require("assets/img/academicWritingImages/LibraryImages/creativity2.png")} filter="dark">
+      /> 
+      <Parallax image={require("assets/img/bg10.jpg")} filter="dark" small>
         <div className={classes.container}>
-          <GridContainer>
-            <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>Enjoy Our Poetry.</h1>
-              <h4>
-              Cultivating creativity to write authentically through Poetry. Find your own creative outlet to ignite your creative ability.
-              </h4>
-              <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-              >
-                <i className="fas fa-play" />
-                Watch video
-              </Button>
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
+              <h2 className={classes.title}>
+             Published Academic Articles
+              </h2>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classes.main}>
         <div className={classes.container}>
-          <SectionPoetryList />
+          <SectionPills />
         </div>
       </div>
       <Footer
@@ -76,7 +61,7 @@ export default function PoetryPage({ ...rest }) {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=mkpr-landing"
+                    href="https://www.creative-tim.com/?ref=mkpr-blog-posts"
                     target="_blank"
                     className={classes.block}
                   >
@@ -85,7 +70,7 @@ export default function PoetryPage({ ...rest }) {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-landing"
+                    href="https://www.creative-tim.com/presentation?ref=mkpr-blog-posts"
                     target="_blank"
                     className={classes.block}
                   >
@@ -99,7 +84,7 @@ export default function PoetryPage({ ...rest }) {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-landing"
+                    href="https://www.creative-tim.com/license?ref=mkpr-blog-posts"
                     target="_blank"
                     className={classes.block}
                   >
@@ -112,7 +97,7 @@ export default function PoetryPage({ ...rest }) {
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
               <a
-                href="https://www.creative-tim.com/?ref=mkpr-landing"
+                href="https://www.creative-tim.com?ref=mkpr-blog-posts"
                 target="_blank"
               >
                 Creative Tim
