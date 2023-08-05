@@ -20,7 +20,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
 import SectionHeaderLinks from "AcademicWritingWebsite/views/AboutUsPage/Sections/SectionHeaderLinks.js";
 // Sections for this page
-import SectionRoyalPoem from "./Sections/SectionRoyalPoem.js";
+import SectionYouAreWomen from "./Sections/SectionYouAreWomen.js";
 import SectionPeomInfo from "./Sections/SectionPeomInfo.js";
 
 const useStyles = makeStyles(landingPageStyle);
@@ -52,13 +52,12 @@ export default function RoyalPoemPage({ ...rest }) {
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <h1 className={classes.title}>
-                Mabudede ubumnyama kufike ukukhanya
+              You are a woman
               </h1>
               <h4>
-                UNISA SBL South African Royal Development Foundations;
-                Traditional Leaders Empowerment Partnership, Afrucab Kingdoms
-                Diaspora Alliance Mabudede ubumnyama kufike ukukhanya Poet:
-                Professor Pumela Msweli; 16 June 2023
+              Celebrating Women month African Queens celebrating the essence of womanhood.
+              The of 9th August is Women's Day South African public holiday. 
+                Professor Pumela Msweli; July 2020
               </h4>
               <br />
               <Button
@@ -76,7 +75,7 @@ export default function RoyalPoemPage({ ...rest }) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionRoyalPoem />
+          <SectionYouAreWomen />
         </div>
         <SectionPeomInfo />
       </div>

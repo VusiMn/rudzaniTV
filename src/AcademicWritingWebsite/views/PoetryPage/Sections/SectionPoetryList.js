@@ -31,23 +31,60 @@ export default function SectionPoetryList() {
         <GridContainer>
           <GridItem md={12}>
             <h2 className={classes.title + " " + classes.textCenter}>
-            Develop your voice with poetry
+              Develop your voice with poetry
             </h2>
-            <p className={classes.title + " " +classes.textCenter}>
-            Writing creatively requires us to do something creative everyday. This may be knitting, crocheting, cooking, dancing, gardening, dressing up, styling up your hair, playing a music instrument, drawing, and painting on canvas.
-          </p>
+            <p className={classes.title + " " + classes.textCenter}>
+              Writing creatively requires us to do something creative everyday.
+              This may be knitting, crocheting, cooking, dancing, gardening,
+              dressing up, styling up your hair, playing a music instrument,
+              drawing, and painting on canvas.
+            </p>
             <GridContainer>
               <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
-                  <Link to="/RoyalPoemPage"  className={classes.listItem}>
+                    <Link to="/YouAreWomenPage" className={classes.listItem}>
                       <img src={blog6} alt="..." />
-                      </Link>
+                    </Link>
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage: "url(" + blog6 + ")",
-                        opacity: "1"
+                        opacity: "1",
+                      }}
+                    />
+                  </CardHeader>
+                  <CardBody>
+                    <Info>
+                      <h6>Poet: Professor Pumela Msweli; July 2020 </h6>
+                    </Info>
+                    <h4 className={classes.cardTitle}>
+                      <a href="#pablo">You Are Woman</a>
+                    </h4>
+                    <p className={classes.description}>
+                      you are a steady radiance of light and beauty in the
+                      cosmic garden of abundance your beauty, your laughter your
+                      sorrows, your joys are a fountain of spring ...
+                      <br></br>
+                      <Link to="/YouAreWomenPage" className={classes.listItem}>
+                        Read More
+                      </Link>
+                    </p>
+                  </CardBody>
+                </Card>
+              </GridItem>
+
+              <GridItem xs={12} sm={4} md={4}>
+                <Card blog>
+                  <CardHeader image>
+                    <Link to="/RoyalPoemPage" className={classes.listItem}>
+                      <img src={blog6} alt="..." />
+                    </Link>
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage: "url(" + blog6 + ")",
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -56,17 +93,15 @@ export default function SectionPoetryList() {
                       <h6>Poet: Professor Pumela Msweli; 16 June 2023</h6>
                     </Info>
                     <h4 className={classes.cardTitle}>
-                      <a href="#pablo">
-                      Mabudede ubumnyama kufike ukukhanya
-                      </a>
+                      <a href="#pablo">Mabudede ubumnyama kufike ukukhanya</a>
                     </h4>
                     <p className={classes.description}>
-                    AMakhosi, Royal Leaders, Mabudede ubumnyama kufike ukukhanya
-                    Let there be light in our lives,
-                    Let there be light in our communities; ...
-                     <br></br>
-                      <Link to="/RoyalPoemPage"  className={classes.listItem}>
-                      Read More
+                      AMakhosi, Royal Leaders, Mabudede ubumnyama kufike
+                      ukukhanya Let there be light in our lives, Let there be
+                      light in our communities; ...
+                      <br></br>
+                      <Link to="/RoyalPoemPage" className={classes.listItem}>
+                        Read More
                       </Link>
                     </p>
                   </CardBody>
@@ -75,14 +110,14 @@ export default function SectionPoetryList() {
               <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
-                    <Link to="/BeLightPoemPage"  className={classes.listItem}>
-                    <img src={blog8} alt="..." />
-                      </Link>
+                    <Link to="/BeLightPoemPage" className={classes.listItem}>
+                      <img src={blog8} alt="..." />
+                    </Link>
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage: "url(" + blog8 + ")",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -91,17 +126,17 @@ export default function SectionPoetryList() {
                       <h6>Poet: Professor Pumela Msweli; 05 May 2022</h6>
                     </Success>
                     <h4 className={classes.cardTitle}>
-                      <a href="#pablo">
-                      Be the Light…
-                      </a>
+                      <a href="#pablo">Be the Light…</a>
                     </h4>
                     <p className={classes.description}>
-                    be the light 
-that dispels the darkness of our fears, greed, corruption and illusions
-be the light that restores order in the human psyche be the light that breaks the spell that divides and fractionise us into south, north, west and east...
-                       <br></br>
-                       <Link to="/BeLightPoemPage"  className={classes.listItem}>
-                      Read More
+                      be the light that dispels the darkness of our fears,
+                      greed, corruption and illusions be the light that restores
+                      order in the human psyche be the light that breaks the
+                      spell that divides and fractionise us into south, north,
+                      west and east...
+                      <br></br>
+                      <Link to="/BeLightPoemPage" className={classes.listItem}>
+                        Read More
                       </Link>
                     </p>
                   </CardBody>
@@ -117,27 +152,29 @@ be the light that restores order in the human psyche be the light that breaks th
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage: "url(" + blog7 + ")",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
                   <CardBody>
                     <Danger>
-                      <h6>
-                        Ignite your writing senses
-                      </h6>
+                      <h6>Ignite your writing senses</h6>
                     </Danger>
                     <h4 className={classes.cardTitle}>
-                      <a href="#pablo">
-                      Cultivate creativity for writing
-                      </a>
+                      <a href="#pablo">Cultivate creativity for writing</a>
                     </h4>
                     <p className={classes.description}>
-                    Beautiful thoughts for beautiful writing
-Cultivating creativity to write authentically requires thinking practices such as mindfulness. In other words, we need to be fully present in our thoughts, and focus on thoughts that serve us...
-                    <br></br>
-                       <Link to="/BlogPostCultivateCreativityPage"  className={classes.listItem}>
-                      Read More
+                      Beautiful thoughts for beautiful writing Cultivating
+                      creativity to write authentically requires thinking
+                      practices such as mindfulness. In other words, we need to
+                      be fully present in our thoughts, and focus on thoughts
+                      that serve us...
+                      <br></br>
+                      <Link
+                        to="/BlogPostCultivateCreativityPage"
+                        className={classes.listItem}
+                      >
+                        Read More
                       </Link>
                     </p>
                   </CardBody>
