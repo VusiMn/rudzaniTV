@@ -45,7 +45,7 @@ export default function RoyalPoemPage({ ...rest }) {
         {...rest}
       />
       <Parallax
-        image={require("assets/img/academicWritingImages/PoetryImages/King2.png")}
+        image={require("assets/img/academicWritingImages/PoetryImages/Queen.JPG")}
         filter="dark"
       >
         <div className={classes.container}>
