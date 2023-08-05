@@ -47,7 +47,7 @@ export default function HeaderLinks(props) {
       currentTime = 0,
       increment = 20;
 
-    var animateScroll = function() {
+    var animateScroll = function () {
       currentTime += increment;
       var val = easeInOutQuad(currentTime, start, change, duration);
       element.scrollTop = val;
@@ -63,84 +63,104 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list + " " + classes.mlAuto}>
-    <ListItem className={classes.listItem}>
-      <Button
-        href="#pablo"
-        className={classes.navLink}
-        onClick={e => e.preventDefault()}
-        color="transparent"
-      >
-        
-        <Link to="/" className={classes.listItem}>
-        Home
-      </Link>
-      </Button>
-    </ListItem>
-    <ListItem className={classes.listItem}>
-      <Button
-        href="#"
-        className={classes.navLink}
-        onClick={e => e.preventDefault()}
-        color="transparent"
-      >
-      <Link to="/profile-page" className={classes.listItem}>
-           Meet Professor
-      </Link>
-      
-      </Button>
-    </ListItem>
-    <ListItem className={classes.listItem}>
-      <Button
-        href="#"
-        className={classes.navLink}
-        onClick={e => e.preventDefault()}
-        color="transparent"
-      >
-         <Link to="/ArticlesPage" className={classes.listItem}>
-                 Articles
+      <ListItem className={classes.listItem}>
+        <Button
+          href="#pablo"
+          className={classes.navLink}
+          onClick={(e) => e.preventDefault()}
+          color="transparent"
+        >
+          <Link to="/" className={classes.listItem}>
+            Home
           </Link>
-      </Button>
-    </ListItem>
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="#"
+          className={classes.navLink}
+          onClick={(e) => e.preventDefault()}
+          color="transparent"
+        >
+          <Link to="/profile-page" className={classes.listItem}>
+            Meet Professor
+          </Link>
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="#"
+          className={classes.navLink}
+          onClick={(e) => e.preventDefault()}
+          color="transparent"
+        >
+          <Link to="/ArticlesPage" className={classes.listItem}>
+            Articles
+          </Link>
+        </Button>
+      </ListItem>
 
-    <ListItem className={classes.listItem}>
-      <Button
-        href="#"
-        className={classes.navLink}
-        onClick={e => e.preventDefault()}
-        color="transparent"
-      >
-         <Link to="/ThinkingAndWritingLogicalPage" className={classes.listItem}>
-             Thinking & Logical Writing   
+      <ListItem className={classes.listItem}>
+        <Button
+          href="#"
+          className={classes.navLink}
+          onClick={(e) => e.preventDefault()}
+          color="transparent"
+        >
+          <Link
+            to="/ThinkingAndWritingLogicalPage"
+            className={classes.listItem}
+          >
+            Thinking & Logical Writing
           </Link>
-      </Button>
-    </ListItem>
-    <ListItem className={classes.listItem}>
-      <Button
-        href="#"
-        className={classes.navLink}
-        onClick={e => e.preventDefault()}
-        color="transparent"
-      >
-         <Link to="/BlogPostCultivateCreativityPage"  className={classes.listItem}>
-         Ignite writing senses
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="#"
+          className={classes.navLink}
+          onClick={(e) => e.preventDefault()}
+          color="transparent"
+        >
+          <Link
+            to="/BlogPostCultivateCreativityPage"
+            className={classes.listItem}
+          >
+            Ignite writing senses
           </Link>
-      </Button>
-    </ListItem>
+        </Button>
+      </ListItem>
 
-    <ListItem className={classes.listItem}>
-      <Button
-        href="#"
-        className={classes.navLink}
-        onClick={e => e.preventDefault()}
-        color="transparent"
-      >
-         <Link to="/PoetryPage"  className={classes.listItem}>
-         Poetry
+      <ListItem className={classes.listItem}>
+        <Button
+          href="#"
+          className={classes.navLink}
+          onClick={(e) => e.preventDefault()}
+          color="transparent"
+        >
+          <Link
+            to="/BlogIsomorphismPage"
+            className={classes.listItem}
+          >
+            Spells of Institutional Isomorphism
           </Link>
-      </Button>
-    </ListItem>
-  
-  {/*
+        </Button>
+      </ListItem>
+
+      <ListItem className={classes.listItem}>
+        <Button
+          href="#"
+          className={classes.navLink}
+          onClick={(e) => e.preventDefault()}
+          color="transparent"
+        >
+          <Link to="/PoetryPage" className={classes.listItem}>
+            Poetry
+          </Link>
+        </Button>
+      </ListItem>
+
+      {/*
     <ListItem className={classes.listItem}>
       <Button
         href="#pablo"
@@ -152,12 +172,12 @@ export default function HeaderLinks(props) {
       </Button>
     </ListItem>
     */}
-  </List>
+    </List>
   );
 }
 
 HeaderLinks.defaultProps = {
-  hoverColor: "primary"
+  hoverColor: "primary",
 };
 
 HeaderLinks.propTypes = {
@@ -168,6 +188,6 @@ HeaderLinks.propTypes = {
     "success",
     "warning",
     "danger",
-    "rose"
-  ])
+    "rose",
+  ]),
 };

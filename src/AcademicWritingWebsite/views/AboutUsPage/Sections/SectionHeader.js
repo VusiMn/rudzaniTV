@@ -24,6 +24,7 @@ import dg1 from "assets/img/academicWritingImages/LibraryImages/library5.jpg";
 import dg2 from "assets/img/academicWritingImages/LibraryImages/study-group-learning-library.jpg";
 import dg3 from "assets/img/academicWritingImages/LibraryImages/library4.jpg";
 import SectionSocialMedia from "./SectionsSocialMedia.js";
+import SectionHeaderLinks from "./SectionHeaderLinks.js";
 
 const useStyles = makeStyles(headersStyle);
 
@@ -41,101 +42,15 @@ export default function SectionHeader({ ...rest }) {
     
       <div>
         <Header
-          absolute
-          brand="Academic Writing"
-          color="transparent"
-          links={
-            <List className={classes.list + " " + classes.mlAuto}>
-              <ListItem className={classes.listItem}>
-                <Button
-                  href="#pablo"
-                  className={classes.navLink}
-                  onClick={e => e.preventDefault()}
-                  color="transparent"
-                >
-                  
-                  <Link to="/" className={classes.listItem}>
-                  Home
-                </Link>
-                </Button>
-              </ListItem>
-              <ListItem className={classes.listItem}>
-                <Button
-                  href="#"
-                  className={classes.navLink}
-                  onClick={e => e.preventDefault()}
-                  color="transparent"
-                >
-                <Link to="/profile-page" className={classes.listItem}>
-                     Meet Professor
-                </Link>
-                
-                </Button>
-              </ListItem>
-              <ListItem className={classes.listItem}>
-                <Button
-                  className={classes.navLink}
-                  onClick={e => e.preventDefault()}
-                  color="transparent"
-                >
-            
-                 <Link to="/ArticlesPage" className={classes.listItem}>
-                 Articles
-                </Link>
-                </Button>
-              </ListItem>
-              <ListItem className={classes.listItem}>
-                <Button
-                  href="#"
-                  className={classes.navLink}
-                  onClick={e => e.preventDefault()}
-                  color="transparent"
-                >
-                  <Link to="/ThinkingAndWritingLogicalPage" className={classes.listItem}>
-                      Thinking & Logical Writing   
-                    </Link>
-                </Button>
-              </ListItem>
-              <ListItem className={classes.listItem}>
-      <Button
-        href="#"
-        className={classes.navLink}
-        onClick={e => e.preventDefault()}
+        brand="Academic Writing"
+        links={<SectionHeaderLinks dropdownHoverColor="info" />}
+        fixed
         color="transparent"
-      >
-         <Link to="/BlogPostCultivateCreativityPage"  className={classes.listItem}>
-         Ignite writing senses
-          </Link>
-      </Button>
-    </ListItem>
-
-    <ListItem className={classes.listItem}>
-      <Button
-        href="#"
-        className={classes.navLink}
-        onClick={e => e.preventDefault()}
-        color="transparent"
-      >
-         <Link to="/PoetryPage"  className={classes.listItem}>
-         Poetry
-          </Link>
-      </Button>
-    </ListItem>
-        {/*
-              <ListItem className={classes.listItem}>
-                <Button
-                  href="#pablo"
-                  className={classes.navLink}
-                  onClick={e => e.preventDefault()}
-                  color="transparent"
-                >
-                  Contact us
-                </Button>
-              </ListItem>
-          */}
-            </List>
-          }
-        />
+        changeColorOnScroll={{
+          height: 300,
+          color: "info",
+        }}
+      />
         <Carousel {...settings}>
           {/* Carousel 1 START */}
           <div>

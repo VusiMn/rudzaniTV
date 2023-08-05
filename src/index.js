@@ -28,6 +28,7 @@ import BlogPostCultivateCreativityPage from "AcademicWritingWebsite/views/BlogPo
 import BlogPostsPage from "AcademicWritingWebsite/views/BlogPostsPage/BlogPostsPage.js";
 import BeLightPoemPage from "AcademicWritingWebsite/views/PoetryPage/BeLightPoemPage.js";
 import YouAreWomenPage from "AcademicWritingWebsite/views/PoetryPage/YouAreWomenPage.js";
+import BlogIsomorphismPage from "AcademicWritingWebsite/views/BlogIsomorphismPage/BlogIsomorphismPage.js";
 import ArticlesPage from "AcademicWritingWebsite/views/ArticlesPage/ArticlesPage.js";
 import ComponentsPage from "views/ComponentsPage/ComponentsPage.js";
 import ContactUsPage from "views/ContactUsPage/ContactUsPage.js";
@@ -50,10 +51,17 @@ var hist = createBrowserHistory();
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/about-us"  component={PresentationPage} />
-      <Route path="/ThinkingAndWritingLogicalPage" component={ThinkingAndWritingLogicalPage} />
+      <Route path="/about-us" component={PresentationPage} />
+      <Route
+        path="/ThinkingAndWritingLogicalPage"
+        component={ThinkingAndWritingLogicalPage}
+      />
       <Route path="/blog-posts" component={BlogPostsPage} />
-      <Route path="/BlogPostCultivateCreativityPage" component={BlogPostCultivateCreativityPage} />
+      <Route
+        path="/BlogPostCultivateCreativityPage"
+        component={BlogPostCultivateCreativityPage}
+      />
+      <Route path="/BlogIsomorphismPage" component={BlogIsomorphismPage} />
       <Route path="/PoetryPage" component={PoetryPage} />
       <Route path="/BeLightPoemPage" component={BeLightPoemPage} />
       <Route path="/RoyalPoemPage" component={RoyalPoemPage} />
@@ -71,7 +79,7 @@ ReactDOM.render(
       <Route path="/shopping-cart-page" component={ShoppingCartPage} />
       <Route path="/signup-page" component={SignupPage} />
       <Route path="/error-page" component={ErrorPage} />
-      <Route path="/" component={AboutUsPage}  />
+      <Route path="/" component={AboutUsPage} />
     </Switch>
   </Router>,
   document.getElementById("root")

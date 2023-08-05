@@ -42,20 +42,16 @@ export default function BlogPostCultivateCreativityPage() {
         }}
       />
       <Parallax
-        image={require("assets/img/academicWritingImages/CultivatingWritingCreativity/beautifulworkplace.jpg")}
+        image={require("assets/img/IsomorphismImages/institutionalTheory1.png")}
         filter="dark"
       >
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem md={8} className={classes.textCenter}>
-              <h1 className={classes.title}>
-                Cultivate creativity for writing
-              </h1>
-              <h4 className={classes.subtitle}>Writing senses ignited</h4>
+              <h2 className={classes.title}>
+              Breaking the Spell of Institutional Isomorphism to achieve Engaged Scholarship objectives
+              </h2>
               <br />
-              <Button color="rose" size="lg" round>
-                <FormatAlignLeft /> Read Blog
-              </Button>
             </GridItem>
           </GridContainer>
         </div>
@@ -63,7 +59,6 @@ export default function BlogPostCultivateCreativityPage() {
       <div className={classes.main}>
         <div className={classes.container}>
           <SectionText />
-          <SectionCarousel />
           <SectionBlogInfo />
         </div>
       </div>
