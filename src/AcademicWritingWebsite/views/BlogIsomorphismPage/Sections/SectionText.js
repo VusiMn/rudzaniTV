@@ -99,14 +99,14 @@ export default function SectionText() {
 
           <h3 className={classes.title}>Isomorphism Spell</h3>
           <p>
-            Using the ‘spell breaking and spell casting metaphor’ the paper
+            Using the ‘spell breaking and spell casting metaphor’ this work
             interrogates how business schools may succumb to the spell of
             isomorphism as a result of highly institutionalised settings vested
             with bureaucratic inertia and influential stakeholders.
           </p>
 
           <p>
-            The paper discusses institutional spells that enable or hinder
+            The work discusses institutional spells that enable or hinder
             agility and efficiency in institutionalising engaged scholarship
             projects that transform society.
           </p>
