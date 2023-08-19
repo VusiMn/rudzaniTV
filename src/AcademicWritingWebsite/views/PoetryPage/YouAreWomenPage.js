@@ -35,7 +35,7 @@ export default function RoyalPoemPage({ ...rest }) {
     <div>
       <Header
         color="transparent"
-        brand="Academic Writing"
+        brand=""
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{
@@ -51,13 +51,11 @@ export default function RoyalPoemPage({ ...rest }) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>
-              You are a woman
-              </h1>
+              <h1 className={classes.title}>You are a woman</h1>
               <h4>
-              Celebrating Women month African Queens celebrating the essence of womanhood.
-              The of 9th August is Women's Day South African public holiday. 
-                Professor Pumela Msweli; July 2020
+                Celebrating Women month African Queens celebrating the essence
+                of womanhood. The of 9th August is Women's Day South African
+                public holiday. Professor Pumela Msweli; July 2020
               </h4>
               <br />
               <Button

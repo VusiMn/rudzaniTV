@@ -5,7 +5,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
-import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.js";
@@ -13,12 +12,10 @@ import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
 // sections for this page
 import SectionText from "./Sections/SectionText.js";
 import SectionBlogInfo from "./Sections/SectionBlogInfo.js";
 import SectionHeaderLinks from "AcademicWritingWebsite/views/AboutUsPage/Sections/SectionHeaderLinks.js";
-import SectionCarousel from "AcademicWritingWebsite/views/BlogPostCultivateCreativityPage/Sections/SectionCarousel.js";
 import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
 
 const useStyles = makeStyles(blogPostPageStyle);
@@ -32,7 +29,7 @@ export default function BlogPostCultivateCreativityPage() {
   return (
     <div>
       <Header
-        brand="Academic Writing"
+        brand=""
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
@@ -49,7 +46,8 @@ export default function BlogPostCultivateCreativityPage() {
           <GridContainer justify="center">
             <GridItem md={8} className={classes.textCenter}>
               <h2 className={classes.title}>
-              Breaking the Spell of Institutional Isomorphism to achieve Engaged Scholarship objectives
+                Breaking the Spell of Institutional Isomorphism to achieve
+                Engaged Scholarship objectives
               </h2>
               <br />
             </GridItem>

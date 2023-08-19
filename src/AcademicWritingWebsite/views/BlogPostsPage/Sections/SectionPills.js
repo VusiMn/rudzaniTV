@@ -15,10 +15,11 @@ import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import Button from "components/CustomButtons/Button.js";
 
-import office2 from "assets/img/examples/office2.jpg";
+import criticalThinkImg from "assets/img/academicWritingImages/CultivatingWritingCreativity/crititcalThinkerBaner1.jpg";
+import igniteWritingImg from "assets/img/academicWritingImages/CultivatingWritingCreativity/beautifulworkplace.jpg";
 import blog8 from "assets/img/examples/blog8.jpg";
 import cardProject6 from "assets/img/examples/card-project6.jpg";
-
+import institutionalTheoryImg from "assets/img/IsomorphismImages/institutionalTheory1.png";
 import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.js";
 
 const useStyles = makeStyles(sectionPillsStyle);
@@ -27,59 +28,30 @@ export default function SectionPills() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
-      <GridContainer justify="center">
-        <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
-          <NavPills
-            alignCenter
-            tabs={[
-              {
-                tabButton: "All",
-                tabContent: ""
-              },
-              {
-                tabButton: "World",
-                tabContent: ""
-              },
-              {
-                tabButton: "Arts",
-                tabContent: ""
-              },
-              {
-                tabButton: "Tech",
-                tabContent: ""
-              },
-              {
-                tabButton: "Business",
-                tabContent: ""
-              }
-            ]}
-          />
-          <div className={classes.tabSpace} />
-        </GridItem>
-      </GridContainer>
       <GridContainer>
         <GridItem xs={12} sm={6} md={6}>
           <Card
             raised
             background
-            style={{ backgroundImage: "url(" + office2 + ")" }}
+            style={{ backgroundImage: "url(" + criticalThinkImg + ")" }}
           >
             <CardBody background>
-              <h6 className={classes.category}>WORLDS</h6>
-              <a href="#pablo">
-                <h3 className={classes.cardTitle}>
-                Thinking and writing logically
-                </h3>
-              </a>
-              <p className={classes.category}>
-              To write coherent arguments requires that we understand different components of a logically sound argument...
-              </p>
+              <Link to="/blog-post" className={classes.listItem}>
+                <a href="#pablo">
+                  <h3 className={classes.cardTitle}>
+                    Thinking and writing logically
+                  </h3>
+                </a>
+                <p className={classes.category}>
+                  To write coherent arguments requires that we understand
+                  different components of a logically sound argument...
+                </p>
+              </Link>
               <Button round href="#pablo" color="danger">
                 <FormatAlignLeft className={classes.icons} />
                 <Link to="/blog-post" className={classes.listItem}>
-                Read article
+                  Read More
                 </Link>
-                
               </Button>
             </CardBody>
           </Card>
@@ -88,58 +60,56 @@ export default function SectionPills() {
           <Card
             raised
             background
-            style={{ backgroundImage: "url(" + blog8 + ")" }}
+            style={{ backgroundImage: "url(" + igniteWritingImg + ")" }}
           >
             <CardBody background>
-              <h6 className={classes.category}>BUSINESS</h6>
-              <a href="#pablo">
-                <h3 className={classes.cardTitle}>
-                Ignite writing senses
-                </h3>
-              </a>
-              <p className={classes.category}>
-              Cultivating creativity to write authentically requires thinking practices such as mindfulness...
-              </p>
+              <Link
+                to="/BlogPostCultivateCreativityPage"
+                className={classes.listItem}
+              >
+                <a href="#pablo">
+                  <h3 className={classes.cardTitle}>Ignite writing senses</h3>
+                </a>
+                <p className={classes.category}>
+                  Cultivating creativity to write authentically requires
+                  thinking practices such as mindfulness...
+                </p>
+              </Link>
               <Button round href="#pablo" color="danger">
-              <FormatAlignLeft className={classes.icons} />
-              <Link to="/BlogPostCultivateCreativityPage" className={classes.listItem}>
-                Read article
+                <FormatAlignLeft className={classes.icons} />
+                <Link
+                  to="/BlogPostCultivateCreativityPage"
+                  className={classes.listItem}
+                >
+                  Read More
                 </Link>
               </Button>
             </CardBody>
           </Card>
         </GridItem>
+
         <GridItem xs={12} sm={12} md={12}>
           <Card
             raised
             background
-            style={{ backgroundImage: "url(" + cardProject6 + ")" }}
+            style={{ backgroundImage: "url(" + institutionalTheoryImg + ")" }}
           >
             <CardBody background>
-              <h6 className={classes.category}>MARKETING</h6>
-              <a href="#pablo">
-                <h3 className={classes.cardTitle}>
-                  0 to 100.000 Customers in 6 months
-                </h3>
-              </a>
-              <p className={classes.category}>
-                Don{"'"}t be scared of the truth because we need to restart the
-                human foundation in truth And I love you like Kanye loves Kanye
-                I love Rick Owens’ bed design but the back is...
-              </p>
-              <Button round href="#pablo" color="warning">
-                <FormatAlignLeft className={classes.icons} /> Read case study
+              <Link to="/BlogIsomorphismPage" className={classes.listItem}>
+                <a href="#pablo">
+                  <h3 className={classes.cardTitle}>Ignite writing senses</h3>
+                </a>
+                <p className={classes.category}>
+                  Breaking the Spell of Institutional Isomorphism to achieve
+                  Engaged Scholarship objectives...
+                </p>
+              </Link>
+              <Button round href="#pablo" color="danger">
+                <FormatAlignLeft className={classes.icons} />
+                <Link to="/BlogIsomorphismPage" className={classes.listItem}>
+                  Read More
+                </Link>
               </Button>
-              <Tooltip
-                id="tooltip-pocket"
-                title="Save to Pocket"
-                placement="top"
-                classes={{ tooltip: classes.tooltip }}
-              >
-                <Button color="white" simple justIcon>
-                  <i className="fab fa-get-pocket" />
-                </Button>
-              </Tooltip>
             </CardBody>
           </Card>
         </GridItem>

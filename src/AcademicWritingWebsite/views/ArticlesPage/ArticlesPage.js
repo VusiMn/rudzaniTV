@@ -29,7 +29,7 @@ export default function ArticlesPage() {
   return (
     <div>
       <Header
-        brand="Academic writing"
+        brand=""
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"

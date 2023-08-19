@@ -32,7 +32,7 @@ export default function SectionHeaders({ ...rest }) {
       {/* HEADER 1 START */}
       <div>
         <Header
-          brand="Academic Writing"
+          brand=""
           links={<SectionHeaderLinks dropdownHoverColor="info" />}
           fixed
           color="transparent"

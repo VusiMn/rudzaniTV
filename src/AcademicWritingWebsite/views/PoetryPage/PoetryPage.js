@@ -33,22 +33,26 @@ export default function PoetryPage({ ...rest }) {
     <div>
       <Header
         color="transparent"
-        brand="Academic Writing"
+        brand=""
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{
           height: 300,
-          color: "info"
+          color: "info",
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/academicWritingImages/LibraryImages/creativity2.png")} filter="dark">
+      <Parallax
+        image={require("assets/img/academicWritingImages/LibraryImages/creativity2.png")}
+        filter="dark"
+      >
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <h1 className={classes.title}>Enjoy Our Poetry.</h1>
               <h4>
-              Cultivating creativity to write authentically through Poetry. Find your own creative outlet to ignite your creative ability.
+                Cultivating creativity to write authentically through Poetry.
+                Find your own creative outlet to ignite your creative ability.
               </h4>
               <br />
               <Button

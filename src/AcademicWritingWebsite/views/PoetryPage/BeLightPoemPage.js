@@ -35,23 +35,24 @@ export default function BeLightPoemPage({ ...rest }) {
     <div>
       <Header
         color="transparent"
-        brand="Academic Writing"
+        brand=""
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{
           height: 300,
-          color: "info"
+          color: "info",
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/academicWritingImages/PoetryImages/BeLight.png")} filter="dark">
+      <Parallax
+        image={require("assets/img/academicWritingImages/PoetryImages/BeLight.png")}
+        filter="dark"
+      >
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <h1 className={classes.title}>Be the Light…</h1>
-              <h4>
-              Poem by Pumela Msweli, 05 May 2022
-              </h4>
+              <h4>Poem by Pumela Msweli, 05 May 2022</h4>
               <br />
               <Button
                 color="danger"
@@ -70,7 +71,7 @@ export default function BeLightPoemPage({ ...rest }) {
         <div className={classes.container}>
           <SectionBeLightPoem />
         </div>
-        <SectionPeomInfo/>
+        <SectionPeomInfo />
       </div>
       <Footer
         content={

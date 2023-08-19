@@ -35,7 +35,7 @@ export default function RoyalPoemPage({ ...rest }) {
     <div>
       <Header
         color="transparent"
-        brand="Academic Writing"
+        brand=""
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{

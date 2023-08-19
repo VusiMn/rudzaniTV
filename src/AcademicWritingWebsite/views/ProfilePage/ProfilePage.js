@@ -55,16 +55,16 @@ export default function ProfilePage({ ...rest }) {
     <div>
       <Header
         color="transparent"
-        brand="Academic Writing"
+        brand=""
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "info"
+          color: "info",
         }}
         {...rest}
-      /> 
-    
+      />
+
       <Parallax
         image={require("assets/img/academicWritingImages/LibraryImages/library2.jpg")}
         filter="dark"
@@ -76,12 +76,16 @@ export default function ProfilePage({ ...rest }) {
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div>
-                  <img src={professorProfile} alt="..." className={imageClasses} />
+                  <img
+                    src={professorProfile}
+                    alt="..."
+                    className={imageClasses}
+                  />
                 </div>
                 <div className={classes.name}>
                   <h3 className={classes.title}>Prof. Pumela Msweli</h3>
                   <h6>Academic writing coach</h6>
-                  <SectionSocialMedia/>
+                  <SectionSocialMedia />
                 </div>
               </div>
               <div className={classes.follow}>
@@ -105,13 +109,23 @@ export default function ProfilePage({ ...rest }) {
           </GridContainer>
           <div className={classNames(classes.description, classes.textCenter)}>
             <h4 className={classes.title}>About Me</h4>
-                        <p className={classes.description}>
-                        My name is Pumela Msweli, I am your writing coach.  I currently serve as the Executive Dean and CEO of the School of Business Leadership at UNISA.
-                        I have taught at the University of Witwatersrand and at University of Natal which became the University of KwaZulu-Natal after the merger. 
-                        I served as a visiting scholar at St Mary’s University in Canada, University of Mauritius and Westminster University in the UK. 
-                        I have supervised 19 doctoral students and 41 masters students to completion. I have published in excess of 80 scholarly works, more than 20 commissioned business research reports in the past 30 years of my career as an academic, 
-                        a social scientist and as an artist. I have participated in numerous international collaborative research projects located in South Africa, Uganda, Mauritius, Zimbabwe, Tanzania, Egypt, Ethiopia, Canada, USA, UK, Germany, France, Finland and Sweden. 
-                        </p>
+            <p className={classes.description}>
+              My name is Pumela Msweli, I am your writing coach. I currently
+              serve as the Executive Dean and CEO of the School of Business
+              Leadership at UNISA. I have taught at the University of
+              Witwatersrand and at University of Natal which became the
+              University of KwaZulu-Natal after the merger. I served as a
+              visiting scholar at St Mary’s University in Canada, University of
+              Mauritius and Westminster University in the UK. I have supervised
+              19 doctoral students and 41 masters students to completion. I have
+              published in excess of 80 scholarly works, more than 20
+              commissioned business research reports in the past 30 years of my
+              career as an academic, a social scientist and as an artist. I have
+              participated in numerous international collaborative research
+              projects located in South Africa, Uganda, Mauritius, Zimbabwe,
+              Tanzania, Egypt, Ethiopia, Canada, USA, UK, Germany, France,
+              Finland and Sweden. 
+            </p>
           </div>
 
           <div className={classes.profileTabs}>
@@ -131,7 +145,6 @@ export default function ProfilePage({ ...rest }) {
                         className={classes.gridItem}
                       >
                         <SectionResume />
-                      
                       </GridItem>
                       <GridItem
                         xs={12}
@@ -139,7 +152,6 @@ export default function ProfilePage({ ...rest }) {
                         md={2}
                         className={classes.gridItem}
                       >
-                        
                         <h4 className={classes.title}>Stats</h4>
                         <ul className={classes.listUnstyled}>
                           <li>
@@ -155,23 +167,24 @@ export default function ProfilePage({ ...rest }) {
                             <b>20+</b> - Commisioned Business Research Reports
                           </li>
                         </ul>
-                 
+
                         <hr />
                         <h4 className={classes.title}>Focus</h4>
                         <Badge color="primary">Academic writting</Badge>
                         <Badge color="rose">Research</Badge>
                         <Badge color="rose">Critical thinking</Badge>
-                        <Badge color="rose">Authentic thinkers & writers </Badge>
+                        <Badge color="rose">
+                          Authentic thinkers & writers{" "}
+                        </Badge>
                       </GridItem>
                     </GridContainer>
-                  )
+                  ),
                 },
                 {
                   tabButton: "Media",
                   tabIcon: People,
                   tabContent: (
                     <div>
-                     
                       <GridContainer justify="center">
                         <GridItem
                           xs={12}
@@ -183,28 +196,29 @@ export default function ProfilePage({ ...rest }) {
                             <GridContainer>
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
-                                  <Link to="/blog-post" className={classes.listItem}>
+                                  <Link
+                                    to="/blog-post"
+                                    className={classes.listItem}
+                                  >
                                     <img src={kendall} alt="..." />
                                   </Link>
                                   <div
                                     className={classes.coloredShadow}
                                     style={{
                                       backgroundImage: "url(" + kendall + ")",
-                                      opacity: "1"
+                                      opacity: "1",
                                     }}
                                   />
                                 </CardHeader>
                               </GridItem>
                               <GridItem xs={12} sm={12} md={7}>
                                 <CardBody plain>
-                                  <h4 className={classes.cardTitle}>
-                                   Blogs
-                                  </h4>
+                                  <h4 className={classes.cardTitle}>Blogs</h4>
                                   <Muted>
                                     <h6>Academic readers paradise</h6>
                                   </Muted>
                                   <p className={classes.description}>
-                                  All thing academic writing
+                                    All thing academic writing
                                   </p>
                                 </CardBody>
                               </GridItem>
@@ -221,29 +235,31 @@ export default function ProfilePage({ ...rest }) {
                             <GridContainer>
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
-                                  <Link to="/PoetryPage" className={classes.listItem}>
-                                  <img src={cardProfile2Square} alt="..." />
+                                  <Link
+                                    to="/PoetryPage"
+                                    className={classes.listItem}
+                                  >
+                                    <img src={cardProfile2Square} alt="..." />
                                   </Link>
                                   <div
                                     className={classes.coloredShadow}
                                     style={{
                                       backgroundImage:
                                         "url(" + cardProfile2Square + ")",
-                                      opacity: "1"
+                                      opacity: "1",
                                     }}
                                   />
                                 </CardHeader>
                               </GridItem>
                               <GridItem xs={12} sm={12} md={7}>
                                 <CardBody plain>
-                                  <h4 className={classes.cardTitle}>
-                                    Poetry
-                                  </h4>
+                                  <h4 className={classes.cardTitle}>Poetry</h4>
                                   <Muted>
                                     <h6>Food for the soul</h6>
                                   </Muted>
                                   <p className={classes.description}>
-                                    Poetry to connnect in deeper level with a personal touch
+                                    Poetry to connnect in deeper level with a
+                                    personal touch
                                   </p>
                                 </CardBody>
                               </GridItem>
@@ -268,22 +284,21 @@ export default function ProfilePage({ ...rest }) {
                                   <div
                                     className={classes.coloredShadow}
                                     style={{
-                                      backgroundImage: "url(" + podcastImg + ")",
-                                      opacity: "1"
+                                      backgroundImage:
+                                        "url(" + podcastImg + ")",
+                                      opacity: "1",
                                     }}
                                   />
                                 </CardHeader>
                               </GridItem>
                               <GridItem xs={12} sm={12} md={7}>
                                 <CardBody plain>
-                                  <h4 className={classes.cardTitle}>
-                                    Podcast
-                                  </h4>
+                                  <h4 className={classes.cardTitle}>Podcast</h4>
                                   <Muted>
                                     <h6> iTunes </h6>
                                   </Muted>
                                   <p className={classes.description}>
-                                  For authentic writers and thinkers
+                                    For authentic writers and thinkers
                                   </p>
                                 </CardBody>
                               </GridItem>
@@ -306,22 +321,21 @@ export default function ProfilePage({ ...rest }) {
                                   <div
                                     className={classes.coloredShadow}
                                     style={{
-                                      backgroundImage: "url(" + youtubeImg + ")",
-                                      opacity: "1"
+                                      backgroundImage:
+                                        "url(" + youtubeImg + ")",
+                                      opacity: "1",
                                     }}
                                   />
                                 </CardHeader>
                               </GridItem>
                               <GridItem xs={12} sm={12} md={7}>
                                 <CardBody plain>
-                                  <h4 className={classes.cardTitle}>
-                                   Youtube
-                                  </h4>
+                                  <h4 className={classes.cardTitle}>Youtube</h4>
                                   <Muted>
                                     <h6>Visual Connection</h6>
                                   </Muted>
                                   <p className={classes.description}>
-                                    Story to help you find your writing journey 
+                                    Story to help you find your writing journey
                                   </p>
                                 </CardBody>
                               </GridItem>
@@ -330,8 +344,8 @@ export default function ProfilePage({ ...rest }) {
                         </GridItem>
                       </GridContainer>
                     </div>
-                  )
-                }
+                  ),
+                },
               ]}
             />
           </div>
@@ -391,8 +405,6 @@ export default function ProfilePage({ ...rest }) {
           </div>
         }
       />
-
-
     </div>
   );
 }

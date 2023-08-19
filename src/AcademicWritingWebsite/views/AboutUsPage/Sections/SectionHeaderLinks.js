@@ -107,6 +107,19 @@ export default function HeaderLinks(props) {
           onClick={(e) => e.preventDefault()}
           color="transparent"
         >
+          <Link to="/blog-posts" className={classes.listItem}>
+            Blogs
+          </Link>
+        </Button>
+      </ListItem>
+      {/**
+      <ListItem className={classes.listItem}>
+        <Button
+          href="#"
+          className={classes.navLink}
+          onClick={(e) => e.preventDefault()}
+          color="transparent"
+        >
           <Link
             to="/ThinkingAndWritingLogicalPage"
             className={classes.listItem}
@@ -143,7 +156,7 @@ export default function HeaderLinks(props) {
           </Link>
         </Button>
       </ListItem>
-
+**/}
       <ListItem className={classes.listItem}>
         <Button
           href="#"
@@ -171,7 +184,7 @@ export default function HeaderLinks(props) {
       </ListItem>
 
       {/*
-      
+      /blog-posts
     <ListItem className={classes.listItem}>
       <Button
         href="#pablo"

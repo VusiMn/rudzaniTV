@@ -36,13 +36,12 @@ export default function SectionHeader({ ...rest }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
+    autoplay: false,
   };
   return (
-    
-      <div>
-        <Header
-        brand="Academic Writing"
+    <div>
+      <Header
+        brand=""
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
@@ -51,85 +50,94 @@ export default function SectionHeader({ ...rest }) {
           color: "info",
         }}
       />
-        <Carousel {...settings}>
-          {/* Carousel 1 START */}
-          <div>
-            <div
-              className={classes.pageHeader}
-              style={{ backgroundImage: `url("${dg1}")` }}
-            >
-              <div className={classes.container}>
-                <GridContainer>
-                  <GridItem xs={12} sm={6} md={6}>
-                    <h1 className={classes.title}>Welcome Academic Writing Authors</h1>
-                    <h4>
-                    Thought leaders writing responsibly for durable impact. The future of academic research and writing is in your hands. 
-                    </h4>
-                    <br />
-                    <Button color="danger" size="lg">
-                    <Link to="/BlogPostCultivateCreativityPage"  className={classes.listItem}>
+      <Carousel {...settings}>
+        {/* Carousel 1 START */}
+        <div>
+          <div
+            className={classes.pageHeader}
+            style={{ backgroundImage: `url("${dg1}")` }}
+          >
+            <div className={classes.container}>
+              <GridContainer>
+                <GridItem xs={12} sm={6} md={6}>
+                  <h1 className={classes.title}>
+                    Welcome Academic Writing Authors
+                  </h1>
+                  <h4>
+                    Thought leaders writing responsibly for durable impact. The
+                    future of academic research and writing is in your hands.
+                  </h4>
+                  <br />
+                  <Button color="danger" size="lg">
+                    <Link
+                      to="/BlogPostCultivateCreativityPage"
+                      className={classes.listItem}
+                    >
                       Read more
-                      </Link>
-                    </Button>                
-                    <SectionSocialMedia/>                  
-                  </GridItem>
-                </GridContainer>
-              </div>
+                    </Link>
+                  </Button>
+                  <SectionSocialMedia />
+                </GridItem>
+              </GridContainer>
             </div>
           </div>
-          {/* Carousel 1 END */}
-          {/* Carousel 2 START */}
-          <div>
-            <div
-              className={classes.pageHeader}
-              style={{ backgroundImage: `url("${dg2}")` }}
-            >
-              <div className={classes.container}>
-                <GridContainer>
-                  <GridItem
-                    xs={12}
-                    sm={8}
-                    md={8}
-                    className={classNames(
-                      classes.mlAuto,
-                      classes.mrAuto,
-                      classes.textCenter
-                    )}
-                  >
-                    <h1 className={classes.title}>Think and write authentically</h1>
-                    <h4>
-                    Cultivating creativity to write authentically through Poetry or even better find your own creative outlet to ignite your creative ability.
-                    </h4>
-                    <br />
-                    <h6>Connect with us on:</h6>
-                    <SectionSocialMedia/>
-                  </GridItem>
-                </GridContainer>
-              </div>
+        </div>
+        {/* Carousel 1 END */}
+        {/* Carousel 2 START */}
+        <div>
+          <div
+            className={classes.pageHeader}
+            style={{ backgroundImage: `url("${dg2}")` }}
+          >
+            <div className={classes.container}>
+              <GridContainer>
+                <GridItem
+                  xs={12}
+                  sm={8}
+                  md={8}
+                  className={classNames(
+                    classes.mlAuto,
+                    classes.mrAuto,
+                    classes.textCenter
+                  )}
+                >
+                  <h1 className={classes.title}>
+                    Think and write authentically
+                  </h1>
+                  <h4>
+                    Cultivating creativity to write authentically through Poetry
+                    or even better find your own creative outlet to ignite your
+                    creative ability.
+                  </h4>
+                  <br />
+                  <h6>Connect with us on:</h6>
+                  <SectionSocialMedia />
+                </GridItem>
+              </GridContainer>
             </div>
           </div>
-          {/* Carousel 2 END */}
-          {/* Carousel 3 START */}
-          <div>
-            <div
-              className={classes.pageHeader}
-              style={{ backgroundImage: `url("${dg3}")` }}
-            >
-              <div className={classes.container}>
-                <GridContainer>
-                  <GridItem
-                    xs={12}
-                    sm={7}
-                    md={7}
-                    className={classNames(classes.mlAuto, classes.textRight)}
-                  >
-                    <h1 className={classes.title}>contributing to knowledge</h1>
-                    <h4>
-                     Your academic research must be published make durable impact
-                    </h4>
-                    <br />
-                    {
-                      /*** 
+        </div>
+        {/* Carousel 2 END */}
+        {/* Carousel 3 START */}
+        <div>
+          <div
+            className={classes.pageHeader}
+            style={{ backgroundImage: `url("${dg3}")` }}
+          >
+            <div className={classes.container}>
+              <GridContainer>
+                <GridItem
+                  xs={12}
+                  sm={7}
+                  md={7}
+                  className={classNames(classes.mlAuto, classes.textRight)}
+                >
+                  <h1 className={classes.title}>contributing to knowledge</h1>
+                  <h4>
+                    Your academic research must be published make durable impact
+                  </h4>
+                  <br />
+                  {/*** 
                     <div>
                       <Button color="white" simple size="lg">
                         <Share /> Share Offer
@@ -139,16 +147,14 @@ export default function SectionHeader({ ...rest }) {
                       </Button>
                     </div>
                     **/}
-                    <SectionSocialMedia/>
-                  </GridItem>
-                </GridContainer>
-              </div>
+                  <SectionSocialMedia />
+                </GridItem>
+              </GridContainer>
             </div>
           </div>
-          {/* Carousel 3 END */}
-        </Carousel>
-      </div>
-    
-    
+        </div>
+        {/* Carousel 3 END */}
+      </Carousel>
+    </div>
   );
 }

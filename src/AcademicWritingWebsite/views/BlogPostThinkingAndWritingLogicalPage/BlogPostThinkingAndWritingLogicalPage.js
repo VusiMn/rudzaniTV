@@ -32,24 +32,25 @@ export default function BlogPostThinkingAndWritingLogicalPage() {
   return (
     <div>
       <Header
-        brand="Academic Writing"
+        brand=""
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
         changeColorOnScroll={{
           height: 300,
-          color: "info"
+          color: "info",
         }}
       />
-      <Parallax image={require("assets/img/academicWritingImages/CultivatingWritingCreativity/crititcalThinkerBaner1.jpg")} filter="dark">
+      <Parallax
+        image={require("assets/img/academicWritingImages/CultivatingWritingCreativity/crititcalThinkerBaner1.jpg")}
+        filter="dark"
+      >
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem md={8} className={classes.textCenter}>
-              <h1 className={classes.title}>
-              Thinking and writing logically
-              </h1>
+              <h1 className={classes.title}>Thinking and writing logically</h1>
               <h4 className={classes.subtitle}>
-              Critical thinking is a beautiful journey of solitude…
+                Critical thinking is a beautiful journey of solitude…
               </h4>
               <br />
               <Button color="rose" size="lg" round>

@@ -32,22 +32,20 @@ export default function BlogPostsPage() {
   return (
     <div>
       <Header
-        brand="Academic writing"
+        brand=""
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
         changeColorOnScroll={{
           height: 400,
-          color: "info"
+          color: "info",
         }}
-      /> 
+      />
       <Parallax image={require("assets/img/bg10.jpg")} filter="dark" small>
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
-              <h2 className={classes.title}>
-              Thinking and writing logically
-              </h2>
+              <h2 className={classes.title}>Thinking and writing logically</h2>
             </GridItem>
           </GridContainer>
         </div>
@@ -55,10 +53,7 @@ export default function BlogPostsPage() {
       <div className={classes.main}>
         <div className={classes.container}>
           <SectionPills />
-          <SectionInterested />
         </div>
-        <SectionImage />
-        <SubscribeLine />
       </div>
       <Footer
         content={

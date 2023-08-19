@@ -32,7 +32,7 @@ export default function BlogPostCultivateCreativityPage() {
   return (
     <div>
       <Header
-        brand="Academic Writing"
+        brand=""
         links={<SectionHeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
