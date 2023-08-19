@@ -29,6 +29,7 @@ import BlogPostsPage from "AcademicWritingWebsite/views/BlogPostsPage/BlogPostsP
 import BeLightPoemPage from "AcademicWritingWebsite/views/PoetryPage/BeLightPoemPage.js";
 import YouAreWomenPage from "AcademicWritingWebsite/views/PoetryPage/YouAreWomenPage.js";
 import BlogIsomorphismPage from "AcademicWritingWebsite/views/BlogIsomorphismPage/BlogIsomorphismPage.js";
+import LectureVideosPage from "AcademicWritingWebsite/views/LectureVideosPage/LectureVideosPage.js";
 import ArticlesPage from "AcademicWritingWebsite/views/ArticlesPage/ArticlesPage.js";
 import ComponentsPage from "views/ComponentsPage/ComponentsPage.js";
 import ContactUsPage from "views/ContactUsPage/ContactUsPage.js";
@@ -62,6 +63,7 @@ ReactDOM.render(
         component={BlogPostCultivateCreativityPage}
       />
       <Route path="/BlogIsomorphismPage" component={BlogIsomorphismPage} />
+      <Route path="/LectureVideosPage" component={LectureVideosPage} />
       <Route path="/PoetryPage" component={PoetryPage} />
       <Route path="/BeLightPoemPage" component={BeLightPoemPage} />
       <Route path="/RoyalPoemPage" component={RoyalPoemPage} />

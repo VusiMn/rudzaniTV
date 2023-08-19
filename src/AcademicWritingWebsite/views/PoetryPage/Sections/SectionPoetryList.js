@@ -18,6 +18,7 @@ import Danger from "components/Typography/Danger.js";
 import blog6 from "assets/img/academicWritingImages/PoetryImages/Queen.JPG";
 import blog8 from "assets/img/academicWritingImages/PoetryImages/BeLight.png";
 import blog7 from "assets/img/academicWritingImages/LibraryImages/library1.jpg";
+import blog1 from "assets/img/academicWritingImages/PoetryImages/King.JPG";
 
 import sectionSimilarStoriesStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionSimilarStoriesStyle.js";
 
@@ -78,12 +79,12 @@ export default function SectionPoetryList() {
                 <Card blog>
                   <CardHeader image>
                     <Link to="/RoyalPoemPage" className={classes.listItem}>
-                      <img src={blog6} alt="..." />
+                      <img src={blog1} alt="..." />
                     </Link>
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: "url(" + blog6 + ")",
+                        backgroundImage: "url(" + blog1 + ")",
                         opacity: "1",
                       }}
                     />

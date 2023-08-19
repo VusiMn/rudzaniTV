@@ -39,33 +39,6 @@ export default function SectionPills() {
             style={{ backgroundImage: "url(" + office2 + ")" }}
           >
             <CardBody background>
-              <h6 className={classes.category}>Board gender diversity</h6>
-              <a href={pdf1} target="_blank">
-                <h3 className={classes.cardTitle}>
-                  Voices of Women in Boards Count, Effective Participation
-                  Counts More: A Board Gender Diversity Theoretical Framework.
-                </h3>
-              </a>
-
-              <Button round href="#pablo" color="danger">
-                <FormatAlignLeft className={classes.icons} />
-                <a
-                  href="https://media.licdn.com/dms/document/media/D4D1FAQGQBSwmH8j9WA/feedshare-document-pdf-analyzed/0/1691065977760?e=1692230400&v=beta&t=5tkc_Jdr7EMVM1AfidlbgnNzjuYAk0Vf0h2UB76x8NM"
-                  target="_blank"
-                >
-                  Read article
-                </a>
-              </Button>
-            </CardBody>
-          </Card>
-        </GridItem>
-        <GridItem xs={12} sm={6} md={6}>
-          <Card
-            raised
-            background
-            style={{ backgroundImage: "url(" + office2 + ")" }}
-          >
-            <CardBody background>
               <h6 className={classes.category}>Banks and Bank Systems</h6>
               <a href={pdf1} target="_blank">
                 <h3 className={classes.cardTitle}>
@@ -177,6 +150,33 @@ export default function SectionPills() {
           </Card>
         </GridItem>
 
+        <GridItem xs={12} sm={6} md={6}>
+          <Card
+            raised
+            background
+            style={{ backgroundImage: "url(" + office2 + ")" }}
+          >
+            <CardBody background>
+              <h6 className={classes.category}>Board gender diversity</h6>
+              <a href={pdf1} target="_blank">
+                <h3 className={classes.cardTitle}>
+                  Voices of Women in Boards Count, Effective Participation
+                  Counts More: A Board Gender Diversity Theoretical Framework.
+                </h3>
+              </a>
+
+              <Button round href="#pablo" color="danger">
+                <FormatAlignLeft className={classes.icons} />
+                <a
+                  href="https://media.licdn.com/dms/document/media/D4D1FAQGQBSwmH8j9WA/feedshare-document-pdf-analyzed/0/1691065977760?e=1692230400&v=beta&t=5tkc_Jdr7EMVM1AfidlbgnNzjuYAk0Vf0h2UB76x8NM"
+                  target="_blank"
+                >
+                  Read article
+                </a>
+              </Button>
+            </CardBody>
+          </Card>
+        </GridItem>
         <GridItem xs={12} sm={6} md={6}>
           <Card
             raised

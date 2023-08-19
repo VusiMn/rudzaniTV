@@ -138,10 +138,7 @@ export default function HeaderLinks(props) {
           onClick={(e) => e.preventDefault()}
           color="transparent"
         >
-          <Link
-            to="/BlogIsomorphismPage"
-            className={classes.listItem}
-          >
+          <Link to="/BlogIsomorphismPage" className={classes.listItem}>
             Spells of Institutional Isomorphism
           </Link>
         </Button>
@@ -160,7 +157,21 @@ export default function HeaderLinks(props) {
         </Button>
       </ListItem>
 
+      <ListItem className={classes.listItem}>
+        <Button
+          href=""
+          className={classes.navLink}
+          onClick={(e) => e.preventDefault()}
+          color="transparent"
+        >
+          <Link to="/LectureVideosPage" className={classes.listItem}>
+            Videos
+          </Link>
+        </Button>
+      </ListItem>
+
       {/*
+      
     <ListItem className={classes.listItem}>
       <Button
         href="#pablo"
