@@ -18,6 +18,7 @@ import Danger from "components/Typography/Danger.js";
 import blog6 from "assets/img/academicWritingImages/PoetryImages/Queen.JPG";
 import blog8 from "assets/img/academicWritingImages/PoetryImages/BeLight.png";
 import blog7 from "assets/img/academicWritingImages/LibraryImages/library1.jpg";
+import msweliWithinYou from "assets/img/academicWritingImages/PoetryImages/msweliWithinYou.jpg";
 import blog1 from "assets/img/academicWritingImages/PoetryImages/King.JPG";
 
 import sectionSimilarStoriesStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionSimilarStoriesStyle.js";
@@ -41,6 +42,38 @@ export default function SectionPoetryList() {
               drawing, and painting on canvas.
             </p>
             <GridContainer>
+              <GridItem xs={12} sm={4} md={4}>
+                <Card blog>
+                  <CardHeader image>
+                    <Link to="/WithYouPoemPage" className={classes.listItem}>
+                      <img src={msweliWithinYou} alt="..." />
+                    </Link>
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage: "url(" + msweliWithinYou + ")",
+                        opacity: "1",
+                      }}
+                    />
+                  </CardHeader>
+                  <CardBody>
+                    <Info>
+                      <h6>Poet: Professor Pumela Msweli; Sept 2023 </h6>
+                    </Info>
+                    <h4 className={classes.cardTitle}>
+                      <a href="#pablo">Within you: reflections of a teacher</a>
+                    </h4>
+                    <p className={classes.description}>
+                      within you around you above you beneath you is all the
+                      love you need ...
+                      <br></br>
+                      <Link to="/WithYouPoemPage" className={classes.listItem}>
+                        Read More
+                      </Link>
+                    </p>
+                  </CardBody>
+                </Card>
+              </GridItem>
               <GridItem xs={12} sm={4} md={4}>
                 <Card blog>
                   <CardHeader image>
@@ -137,44 +170,6 @@ export default function SectionPoetryList() {
                       west and east...
                       <br></br>
                       <Link to="/BeLightPoemPage" className={classes.listItem}>
-                        Read More
-                      </Link>
-                    </p>
-                  </CardBody>
-                </Card>
-              </GridItem>
-              <GridItem xs={12} sm={4} md={4}>
-                <Card blog>
-                  <CardHeader image>
-                    <a href="#pablo">
-                      <img src={blog7} alt="..." />
-                    </a>
-                    <div
-                      className={classes.coloredShadow}
-                      style={{
-                        backgroundImage: "url(" + blog7 + ")",
-                        opacity: "1",
-                      }}
-                    />
-                  </CardHeader>
-                  <CardBody>
-                    <Danger>
-                      <h6>Ignite your writing senses</h6>
-                    </Danger>
-                    <h4 className={classes.cardTitle}>
-                      <a href="#pablo">Cultivate creativity for writing</a>
-                    </h4>
-                    <p className={classes.description}>
-                      Beautiful thoughts for beautiful writing Cultivating
-                      creativity to write authentically requires thinking
-                      practices such as mindfulness. In other words, we need to
-                      be fully present in our thoughts, and focus on thoughts
-                      that serve us...
-                      <br></br>
-                      <Link
-                        to="/BlogPostCultivateCreativityPage"
-                        className={classes.listItem}
-                      >
                         Read More
                       </Link>
                     </p>

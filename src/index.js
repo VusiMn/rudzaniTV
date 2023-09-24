@@ -28,6 +28,7 @@ import BlogPostCultivateCreativityPage from "AcademicWritingWebsite/views/BlogPo
 import BlogPostsPage from "AcademicWritingWebsite/views/BlogPostsPage/BlogPostsPage.js";
 import BeLightPoemPage from "AcademicWritingWebsite/views/PoetryPage/BeLightPoemPage.js";
 import YouAreWomenPage from "AcademicWritingWebsite/views/PoetryPage/YouAreWomenPage.js";
+import WithinYouPoemPage from "AcademicWritingWebsite/views/PoetryPage/WithinYouPoemPage.js";
 import BlogIsomorphismPage from "AcademicWritingWebsite/views/BlogIsomorphismPage/BlogIsomorphismPage.js";
 import LectureVideosPage from "AcademicWritingWebsite/views/LectureVideosPage/LectureVideosPage.js";
 import ArticlesPage from "AcademicWritingWebsite/views/ArticlesPage/ArticlesPage.js";
@@ -67,6 +68,7 @@ ReactDOM.render(
       <Route path="/PoetryPage" component={PoetryPage} />
       <Route path="/BeLightPoemPage" component={BeLightPoemPage} />
       <Route path="/RoyalPoemPage" component={RoyalPoemPage} />
+      <Route path="/WithYouPoemPage" component={WithinYouPoemPage} />
       <Route path="/YouAreWomenPage" component={YouAreWomenPage} />
       <Route path="/ArticlesPage" component={ArticlesPage} />
       <Route path="/components" component={ComponentsPage} />

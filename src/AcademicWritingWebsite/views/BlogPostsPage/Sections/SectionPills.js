@@ -36,7 +36,10 @@ export default function SectionPills() {
             style={{ backgroundImage: "url(" + criticalThinkImg + ")" }}
           >
             <CardBody background>
-              <Link to="/blog-post" className={classes.listItem}>
+              <Link
+                to="/ThinkingAndWritingLogicalPage"
+                className={classes.listItem}
+              >
                 <a href="#pablo">
                   <h3 className={classes.cardTitle}>
                     Thinking and writing logically
@@ -49,7 +52,10 @@ export default function SectionPills() {
               </Link>
               <Button round href="#pablo" color="danger">
                 <FormatAlignLeft className={classes.icons} />
-                <Link to="/blog-post" className={classes.listItem}>
+                <Link
+                  to="/ThinkingAndWritingLogicalPage"
+                  className={classes.listItem}
+                >
                   Read More
                 </Link>
               </Button>
@@ -68,7 +74,10 @@ export default function SectionPills() {
                 className={classes.listItem}
               >
                 <a href="#pablo">
-                  <h3 className={classes.cardTitle}>Ignite writing senses</h3>
+                  <h3 className={classes.cardTitle}>
+                    {" "}
+                    Cultivate creativity for writing
+                  </h3>
                 </a>
                 <p className={classes.category}>
                   Cultivating creativity to write authentically requires
