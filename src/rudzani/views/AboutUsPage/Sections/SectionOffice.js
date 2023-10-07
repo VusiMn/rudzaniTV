@@ -26,21 +26,6 @@ export default function SectionOffice() {
   const classes = useStyles();
   return (
     <div className={classes.office}>
-      <GridContainer className={classes.textCenter}>
-        <GridItem
-          md={8}
-          sm={8}
-          className={classNames(classes.mrAuto, classes.mlAuto)}
-        >
-          <h2 className={classes.title}>Our Story</h2>
-          <h4 className={classes.description}>
-            At the core of the company’s ethos is the recognition and respect of
-            the cultural identity of indigenous people as an asset for economic
-            development, and this forms the basis for the need to promote their
-            stories.
-          </h4>
-        </GridItem>
-      </GridContainer>
       <GridContainer>
         <GridItem md={4} sm={4}>
           <InfoArea
@@ -96,6 +81,21 @@ export default function SectionOffice() {
             icon={Fingerprint}
             iconColor="brown"
           />
+        </GridItem>
+      </GridContainer>
+      <GridContainer className={classes.textCenter}>
+        <GridItem
+          md={8}
+          sm={8}
+          className={classNames(classes.mrAuto, classes.mlAuto)}
+        >
+          <h2 className={classes.title}>Our Story</h2>
+          <h4 className={classes.description}>
+            At the core of the company’s ethos is the recognition and respect of
+            the cultural identity of indigenous people as an asset for economic
+            development, and this forms the basis for the need to promote their
+            stories.
+          </h4>
         </GridItem>
       </GridContainer>
       <GridContainer>

@@ -15,17 +15,14 @@ import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
 // sections for this page
-import SectionDescription from "./Sections/SectionDescription.js";
 import SectionTeams from "./Sections/SectionTeams.js";
-import SectionOffice from "./Sections/SectionOffice.js";
-import SectionFeatures from "./Sections/SectionFeatures.js";
 
 import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.js";
 import HeaderLinks from "../../components/Header/HeaderLinks.js";
 
 const useStyles = makeStyles(aboutUsStyle);
 
-export default function AboutUsPage() {
+export default function TheTeamPage() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -63,8 +60,6 @@ export default function AboutUsPage() {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionDescription />
-          <SectionOffice />
           <SectionTeams />
         </div>
       </div>

@@ -32,6 +32,8 @@ export default function SectionTeams({ ...rest }) {
   return (
     <div className="cd-section" {...rest}>
       {/* Team 4 START */}
+      <br></br>
+      <br></br>
       <div
         className={classes.team + " " + classes.section}
         style={{ backgroundImage: `url(${bg7})` }}
@@ -48,7 +50,8 @@ export default function SectionTeams({ ...rest }) {
             >
               <h2 className={classes.title}>The Team</h2>
               <h5 className={classes.descriptionWhite}>
-                Dedicated team passionate about our vision.
+                The pioneers of distributing, exhibiting and preserving African
+                stories for Africans and the world through Film and Television.
               </h5>
             </GridItem>
           </GridContainer>
@@ -455,7 +458,9 @@ export default function SectionTeams({ ...rest }) {
           </GridContainer>
         </div>
       </div>
-       Team 3 END */}
+                    Team 3 END */}
+      <br></br>
+      <br></br>
     </div>
   );
 }

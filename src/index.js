@@ -40,6 +40,8 @@ import SignupPage from "views/SignupPage/SignupPage.js";
 import ErrorPage from "views/ErrorPage/ErrorPage.js";
 import AboutUsRuPage from "rudzani/views/AboutUsPage/AboutUsPage.js";
 import ServicesPage from "rudzani/views/ServicesPage/ServicesPage.js";
+import iBioscopeBlogPostPage from "rudzani/views/iBioscopeBlogPostPage/iBioscopeBlogPostPage.js";
+import TheTeamPage from "rudzani/views/TheTeamPage/TheTeamPage.js";
 
 var hist = createBrowserHistory();
 
@@ -47,19 +49,21 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/about-us" component={AboutUsRuPage} />
+      <Route path="/ibioscope-page" component={iBioscopeBlogPostPage} />
+      <Route path="/services-page" component={ServicesPage} />
+      <Route path="/our-team-page" component={TheTeamPage} />
+      <Route path="/landing-page" component={ServicesPage} />
       <Route path="/blog-post" component={BlogPostPage} />
       <Route path="/blog-posts" component={BlogPostsPage} />
       <Route path="/components" component={ComponentsPage} />
       <Route path="/contact-us" component={ContactUsPage} />
       <Route path="/ecommerce-page" component={EcommercePage} />
-      <Route path="/landing-page" component={ServicesPage} />
       <Route path="/login-page" component={LoginPage} />
       <Route path="/pricing" component={PricingPage} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/product-page" component={ProductPage} />
       <Route path="/sections" component={SectionsPage} />
       <Route path="/shopping-cart-page" component={ShoppingCartPage} />
-      <Route path="/signup-page" component={SignupPage} />
       <Route path="/error-page" component={ErrorPage} />
       <Route path="/" component={PresentationPage} />
     </Switch>

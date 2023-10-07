@@ -1,31 +1,30 @@
-/*eslint-disable*/
-import React from "react";
-// nodejs library that concatenates classes
-import classNames from "classnames";
+/*eslint-disable*/ import React from "react";
+// nodejs library to set properties for components
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
+import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
+import HeaderLinks from "../../components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
+import Button from "components/CustomButtons/Button.js";
 // sections for this page
-import SectionDescription from "./Sections/SectionDescription.js";
-import SectionTeams from "./Sections/SectionTeams.js";
-import SectionOffice from "./Sections/SectionOffice.js";
-import SectionFeatures from "./Sections/SectionFeatures.js";
+import SectionText from "./Sections/SectionText.js";
+import SectionBlogInfo from "./Sections/SectionBlogInfo.js";
+import SectionSimilarStories from "./Sections/SectionSimilarStories.js";
 
-import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.js";
-import HeaderLinks from "../../components/Header/HeaderLinks.js";
+import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
 
-const useStyles = makeStyles(aboutUsStyle);
+const useStyles = makeStyles(blogPostPageStyle);
 
-export default function AboutUsPage() {
+export default function iBioscopeBlogPostPage() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -43,31 +42,30 @@ export default function AboutUsPage() {
           color: "info",
         }}
       />
-      <Parallax image={require("assets/img/bg9.jpg")} filter="dark" small>
+      <Parallax image={require("assets/img/bg5.jpg")} filter="dark">
         <div className={classes.container}>
           <GridContainer justify="center">
-            <GridItem
-              md={8}
-              sm={8}
-              className={classNames(
-                classes.mlAuto,
-                classes.mrAuto,
-                classes.textCenter
-              )}
-            >
-              <h1 className={classes.title}>Share African stories</h1>
-              <h4>The power of the arts to create change</h4>
+            <GridItem md={8} className={classes.textCenter}>
+              <h1 className={classes.title}>iBioscope yeCommunity</h1>
+              <h4 className={classes.subtitle}>
+                Distribution Production Company that caters for Africans in the
+                Film and Television industry
+              </h4>
+              <br />
+              <Button color="rose" size="lg" round>
+                <FormatAlignLeft /> Read Article
+              </Button>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classes.main}>
         <div className={classes.container}>
-          <SectionDescription />
-          <SectionOffice />
-          <SectionTeams />
+          <SectionText />
+          <SectionBlogInfo />
         </div>
       </div>
+      <SectionSimilarStories />
       <Footer
         content={
           <div>
@@ -75,36 +73,36 @@ export default function AboutUsPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=mkpr-about-us"
-                    className={classes.block}
+                    href="https://www.creative-tim.com/?ref=mkpr-blog-post"
                     target="_blank"
+                    className={classes.block}
                   >
                     Creative Tim
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-about-us"
-                    className={classes.block}
+                    href="https://www.creative-tim.com/presentation?ref=mkpr-blog-post"
                     target="_blank"
+                    className={classes.block}
                   >
                     About us
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="//blog.creative-tim.com/"
-                    className={classes.block}
+                    href="https://blog.creative-tim.com/?ref=mkpr-blog-post"
                     target="_blank"
+                    className={classes.block}
                   >
                     Blog
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-about-us"
-                    className={classes.block}
+                    href="https://www.creative-tim.com/license?ref=mkpr-blog-post"
                     target="_blank"
+                    className={classes.block}
                   >
                     Licenses
                   </a>
@@ -115,7 +113,7 @@ export default function AboutUsPage() {
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
               <a
-                href="https://www.creative-tim.com?ref=mkpr-about-us"
+                href="https://www.creative-tim.com?ref=mkpr-blog-post"
                 target="_blank"
               >
                 Creative Tim
