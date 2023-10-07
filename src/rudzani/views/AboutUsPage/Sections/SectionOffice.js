@@ -43,64 +43,6 @@ export default function SectionOffice() {
       </GridContainer>
       <GridContainer>
         <GridItem md={4} sm={4}>
-          <img
-            className={classNames(
-              classes.imgRaised,
-              classes.imgFluid,
-              classes.rounded
-            )}
-            src={office1}
-            alt="office1"
-          />
-        </GridItem>
-        <GridItem md={4} sm={4}>
-          <img
-            className={classNames(
-              classes.imgRaised,
-              classes.imgFluid,
-              classes.rounded
-            )}
-            src={office2}
-            alt="office2"
-          />
-        </GridItem>
-        <GridItem md={4} sm={4}>
-          <img
-            className={classNames(
-              classes.imgRaised,
-              classes.imgFluid,
-              classes.rounded
-            )}
-            src={office3}
-            alt="office3"
-          />
-        </GridItem>
-        <GridItem md={6} sm={6}>
-          <img
-            className={classNames(
-              classes.imgRaised,
-              classes.imgFluid,
-              classes.rounded
-            )}
-            src={office4}
-            alt="office4"
-          />
-        </GridItem>
-        <GridItem md={6} sm={6}>
-          <img
-            className={classNames(
-              classes.imgRaised,
-              classes.imgFluid,
-              classes.rounded
-            )}
-            src={office5}
-            alt="office5"
-          />
-        </GridItem>
-      </GridContainer>
-
-      <GridContainer>
-        <GridItem md={4} sm={4}>
           <InfoArea
             title="Vision"
             description={
@@ -153,6 +95,63 @@ export default function SectionOffice() {
             }
             icon={Fingerprint}
             iconColor="brown"
+          />
+        </GridItem>
+      </GridContainer>
+      <GridContainer>
+        <GridItem md={4} sm={4}>
+          <img
+            className={classNames(
+              classes.imgRaised,
+              classes.imgFluid,
+              classes.rounded
+            )}
+            src={office1}
+            alt="office1"
+          />
+        </GridItem>
+        <GridItem md={4} sm={4}>
+          <img
+            className={classNames(
+              classes.imgRaised,
+              classes.imgFluid,
+              classes.rounded
+            )}
+            src={office2}
+            alt="office2"
+          />
+        </GridItem>
+        <GridItem md={4} sm={4}>
+          <img
+            className={classNames(
+              classes.imgRaised,
+              classes.imgFluid,
+              classes.rounded
+            )}
+            src={office3}
+            alt="office3"
+          />
+        </GridItem>
+        <GridItem md={6} sm={6}>
+          <img
+            className={classNames(
+              classes.imgRaised,
+              classes.imgFluid,
+              classes.rounded
+            )}
+            src={office4}
+            alt="office4"
+          />
+        </GridItem>
+        <GridItem md={6} sm={6}>
+          <img
+            className={classNames(
+              classes.imgRaised,
+              classes.imgFluid,
+              classes.rounded
+            )}
+            src={office5}
+            alt="office5"
           />
         </GridItem>
       </GridContainer>

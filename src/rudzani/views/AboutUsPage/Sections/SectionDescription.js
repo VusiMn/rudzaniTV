@@ -21,7 +21,6 @@ export default function SectionDescription() {
           sm={8}
           className={classNames(classes.mrAuto, classes.mlAuto)}
         >
-          <h2 className={classes.title}>About Us</h2>
           <h5 className={classes.description}>
             Rudzani Muthambi Properties PTY LTD – (RMP), is a 100% black owned
             brainchild of a young female visionary, committed to raising the

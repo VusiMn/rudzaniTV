@@ -18,7 +18,6 @@ import Footer from "components/Footer/Footer.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import SectionDescription from "./Sections/SectionDescription.js";
 import SectionTeams from "./Sections/SectionTeams.js";
-import SectionServices from "./Sections/SectionServices.js";
 import SectionOffice from "./Sections/SectionOffice.js";
 import SectionFeatures from "./Sections/SectionFeatures.js";
 
