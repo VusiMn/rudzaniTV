@@ -17,8 +17,6 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 // sections for this page
 import SectionText from "./Sections/SectionText.js";
-import SectionBlogInfo from "./Sections/SectionBlogInfo.js";
-import SectionSimilarStories from "./Sections/SectionSimilarStories.js";
 
 import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
 
@@ -42,7 +40,7 @@ export default function iBioscopeBlogPostPage() {
           color: "info",
         }}
       />
-      <Parallax image={require("assets/img/Ru/1.png")} filter="dark">
+      <Parallax image={require("assets/img/Ru/3.png")} filter="dark">
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem md={8} className={classes.textCenter}>

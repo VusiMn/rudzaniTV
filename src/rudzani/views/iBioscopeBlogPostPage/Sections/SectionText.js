@@ -11,13 +11,7 @@ import Quote from "components/Typography/Quote.js";
 
 import blog4 from "assets/img/Ru/bioscope4.jpg";
 import blog3 from "assets/img/Ru/bioscope5.png";
-import blog1 from "assets/img/Ru/bioscope2.jpg";
-
-import office1 from "assets/img/Ru/bioscope1.jpg";
-import office2 from "assets/img/Ru/bioscope5.png";
-import office3 from "assets/img/Ru/bioscope4.jpg";
-import office4 from "assets/img/Ru/bioscope3.jpg";
-import office5 from "assets/img/Ru/bioscope2.jpg";
+import blog1 from "assets/img/Ru/bioscope3.jpg";
 
 import sectionTextStyle from "assets/jss/material-kit-pro-react/views/blogPostSections/sectionTextStyle.js";
 
