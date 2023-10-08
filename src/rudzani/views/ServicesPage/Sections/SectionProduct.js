@@ -28,7 +28,6 @@ export default function SectionProduct() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Conceptualizing, Script writing, and Producing"
-              //description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={Chat}
               iconColor="info"
               vertical
@@ -37,7 +36,6 @@ export default function SectionProduct() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Film and Television Training, Social documentaries, Feature films and Short films"
-              //description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={VideoCam}
               iconColor="success"
               vertical
@@ -46,7 +44,6 @@ export default function SectionProduct() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Game Design"
-              //description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
               icon={VideoGame}
               iconColor="danger"
               vertical
