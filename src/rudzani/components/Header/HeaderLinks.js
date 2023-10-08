@@ -65,18 +65,6 @@ export default function HeaderLinks(props) {
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
         <Button
-          href="#pablo"
-          className={classes.navLink}
-          onClick={(e) => e.preventDefault()}
-          color="transparent"
-        >
-          <Link to="/" className={classes.listItem}>
-            Home
-          </Link>
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
           href="#"
           className={classes.navLink}
           onClick={(e) => e.preventDefault()}
@@ -87,6 +75,7 @@ export default function HeaderLinks(props) {
           </Link>
         </Button>
       </ListItem>
+
       <ListItem className={classes.listItem}>
         <Button
           href="#"
@@ -112,51 +101,19 @@ export default function HeaderLinks(props) {
           </Link>
         </Button>
       </ListItem>
-      {/**
-      <ListItem className={classes.listItem}>
-        <Button
-          href="#"
-          className={classes.navLink}
-          onClick={(e) => e.preventDefault()}
-          color="transparent"
-        >
-          <Link
-            to="/ThinkingAndWritingLogicalPage"
-            className={classes.listItem}
-          >
-            Thinking & Logical Writing
-          </Link>
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="#"
-          className={classes.navLink}
-          onClick={(e) => e.preventDefault()}
-          color="transparent"
-        >
-          <Link
-            to="/BlogPostCultivateCreativityPage"
-            className={classes.listItem}
-          >
-            Ignite writing senses
-          </Link>
-        </Button>
-      </ListItem>
 
       <ListItem className={classes.listItem}>
         <Button
-          href="#"
+          href=""
           className={classes.navLink}
           onClick={(e) => e.preventDefault()}
           color="transparent"
         >
-          <Link to="/BlogIsomorphismPage" className={classes.listItem}>
-            Spells of Institutional Isomorphism
+          <Link to="/ru-blog-posts" className={classes.listItem}>
+            Blogs
           </Link>
         </Button>
       </ListItem>
-**/}
       <ListItem className={classes.listItem}>
         <Button
           href="#"
@@ -177,39 +134,42 @@ export default function HeaderLinks(props) {
           onClick={(e) => e.preventDefault()}
           color="transparent"
         >
-          <Link to="/ru-blog-posts" className={classes.listItem}>
-            Blogs
-          </Link>
-        </Button>
-      </ListItem>
-
-      <ListItem className={classes.listItem}>
-        <Button
-          href=""
-          className={classes.navLink}
-          onClick={(e) => e.preventDefault()}
-          color="transparent"
-        >
           <Link to="/LectureVideosPage" className={classes.listItem}>
             Videos
           </Link>
         </Button>
       </ListItem>
 
-      {/*
-      /ru-blog-posts
-      /blog-posts
-    <ListItem className={classes.listItem}>
-      <Button
-        href="#pablo"
-        className={classes.navLink}
-        onClick={e => e.preventDefault()}
-        color="transparent"
-      >
-        Contact us
-      </Button>
-    </ListItem>
-    */}
+      <ListItem className={classes.listItem}>
+        <Button
+          href="https://twitter.com/RuudzaniTV"
+          target="_blank"
+          color="transparent"
+          className={classes.navLink}
+        >
+          <i className={classes.socialIcons + " fab fa-twitter"} />
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          color="transparent"
+          href="https://www.facebook.com/profile.php?id=100087684368238"
+          target="_blank"
+          className={classes.navLink}
+        >
+          <i className={classes.socialIcons + " fab fa-facebook"} />
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          color="transparent"
+          href="https://www.instagram.com/rudzanitv/"
+          target="_blank"
+          className={classes.navLink}
+        >
+          <i className={classes.socialIcons + " fab fa-instagram"} />
+        </Button>
+      </ListItem>
     </List>
   );
 }

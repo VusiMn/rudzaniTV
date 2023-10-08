@@ -42,7 +42,7 @@ export default function iBioscopeBlogPostPage() {
           color: "info",
         }}
       />
-      <Parallax image={require("assets/img/bg5.jpg")} filter="dark">
+      <Parallax image={require("assets/img/Ru/1.png")} filter="dark">
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem md={8} className={classes.textCenter}>
@@ -62,10 +62,8 @@ export default function iBioscopeBlogPostPage() {
       <div className={classes.main}>
         <div className={classes.container}>
           <SectionText />
-          <SectionBlogInfo />
         </div>
       </div>
-      <SectionSimilarStories />
       <Footer
         content={
           <div>

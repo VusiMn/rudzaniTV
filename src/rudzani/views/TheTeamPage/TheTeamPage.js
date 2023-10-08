@@ -40,7 +40,7 @@ export default function TheTeamPage() {
           color: "info",
         }}
       />
-      <Parallax image={require("assets/img/bg9.jpg")} filter="dark" small>
+      <Parallax image={require("assets/img/bg4.jpg")} filter="dark" small>
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem
