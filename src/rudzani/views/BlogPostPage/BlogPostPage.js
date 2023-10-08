@@ -1,26 +1,29 @@
-/*eslint-disable*/
-import React from "react";
+/*eslint-disable*/ import React from "react";
+// nodejs library to set properties for components
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
+import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "../../components/Header/HeaderLinks.js";
+import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Parallax from "components/Parallax/Parallax.js";
+import Button from "components/CustomButtons/Button.js";
 // sections for this page
-import SectionBlogList from "./Sections/SectionBlogList.js";
+import SectionText from "./Sections/SectionText.js";
+import SectionBlogInfo from "./Sections/SectionBlogInfo.js";
 
-import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.js";
+import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
 
-const useStyles = makeStyles(blogPostsPageStyle);
+const useStyles = makeStyles(blogPostPageStyle);
 
-export default function BlogPostsPage() {
+export default function BlogPostPage() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -34,25 +37,33 @@ export default function BlogPostsPage() {
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 400,
+          height: 300,
           color: "info",
         }}
       />
-      <Parallax image={require("assets/img/bg10.jpg")} filter="dark" small>
+      <Parallax image={require("assets/img/bg5.jpg")} filter="dark">
         <div className={classes.container}>
           <GridContainer justify="center">
-            <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
-              <h2 className={classes.title}>
-                A Place for Africans in the Film and Television industry to
-                Share and Discover New Stories
-              </h2>
+            <GridItem md={8} className={classes.textCenter}>
+              <h1 className={classes.title}>
+                How We Built the Most Successful Castle Ever
+              </h1>
+              <h4 className={classes.subtitle}>
+                The last 48 hours of my life were total madness. This is what I
+                did.
+              </h4>
+              <br />
+              <Button color="rose" size="lg" round>
+                <FormatAlignLeft /> Read Article
+              </Button>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classes.main}>
         <div className={classes.container}>
-          <SectionBlogList />
+          <SectionText />
+          <SectionBlogInfo />
         </div>
       </div>
       <Footer
@@ -62,7 +73,7 @@ export default function BlogPostsPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=mkpr-blog-posts"
+                    href="https://www.creative-tim.com/?ref=mkpr-blog-post"
                     target="_blank"
                     className={classes.block}
                   >
@@ -71,7 +82,7 @@ export default function BlogPostsPage() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-blog-posts"
+                    href="https://www.creative-tim.com/presentation?ref=mkpr-blog-post"
                     target="_blank"
                     className={classes.block}
                   >
@@ -79,13 +90,17 @@ export default function BlogPostsPage() {
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
-                  <a href="//blog.creative-tim.com/" className={classes.block}>
+                  <a
+                    href="https://blog.creative-tim.com/?ref=mkpr-blog-post"
+                    target="_blank"
+                    className={classes.block}
+                  >
                     Blog
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-blog-posts"
+                    href="https://www.creative-tim.com/license?ref=mkpr-blog-post"
                     target="_blank"
                     className={classes.block}
                   >
@@ -98,7 +113,7 @@ export default function BlogPostsPage() {
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
               <a
-                href="https://www.creative-tim.com?ref=mkpr-blog-posts"
+                href="https://www.creative-tim.com?ref=mkpr-blog-post"
                 target="_blank"
               >
                 Creative Tim

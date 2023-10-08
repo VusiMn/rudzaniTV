@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import TrendingUp from "@material-ui/icons/TrendingUp";
 import { blogPostData } from "./blogPostData";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
@@ -11,12 +11,6 @@ import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import Info from "components/Typography/Info.js";
-import Success from "components/Typography/Success.js";
-import Danger from "components/Typography/Danger.js";
-
-import bg5 from "assets/img/bg5.jpg";
-import blog5 from "assets/img/examples/blog5.jpg";
-import blog6 from "assets/img/examples/blog6.jpg";
 
 import sectionInterestedStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionInterestedStyle.js";
 
@@ -37,9 +31,15 @@ export default function SectionBlogList() {
             <GridItem xs={12} sm={4} md={4} lg={4} xl={4}>
               <Card plain blog>
                 <CardHeader image plain>
-                  <a href="#pablo">
+                  <Link
+                    to={{
+                      pathname: "blog-post",
+                      blogId: blog.id,
+                    }}
+                    className={classes.listItem}
+                  >
                     <img src={blog.profileImage} alt="..." />
-                  </a>
+                  </Link>
                   <div
                     className={classes.coloredShadow}
                     style={{
@@ -53,7 +53,15 @@ export default function SectionBlogList() {
                     <h6>{blog.name}</h6>
                   </Info>
                   <h4 className={classes.cardTitle}>
-                    <a href="#pablo">{blog.professionTitle}</a>
+                    <Link
+                      to={{
+                        pathname: "blog-post",
+                        blogId: blog.id,
+                      }}
+                      className={classes.listItem}
+                    >
+                      {blog.professionTitle}
+                    </Link>
                   </h4>
                   <p className={classes.description}>
                     {blog.bannerSubTitle}

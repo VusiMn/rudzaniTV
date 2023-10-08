@@ -43,6 +43,7 @@ import ServicesPage from "rudzani/views/ServicesPage/ServicesPage.js";
 import iBioscopeBlogPostPage from "rudzani/views/iBioscopeBlogPostPage/iBioscopeBlogPostPage.js";
 import TheTeamPage from "rudzani/views/TheTeamPage/TheTeamPage.js";
 import RuBlogPostsPage from "rudzani/views/BlogsPostPage/BlogPostsPage.js";
+import RuBlogPostPage from "rudzani/views/BlogPostPage/BlogPostPage.js";
 
 var hist = createBrowserHistory();
 
@@ -53,6 +54,7 @@ ReactDOM.render(
       <Route path="/ibioscope-page" component={iBioscopeBlogPostPage} />
       <Route path="/services-page" component={ServicesPage} />
       <Route path="/our-team-page" component={TheTeamPage} />
+      <Route path="/ru-blog-posts" component={RuBlogPostPage} />
       <Route path="/landing-page" component={ServicesPage} />
       <Route path="/blog-post" component={BlogPostPage} />
       <Route path="/blog-posts" component={BlogPostsPage} />
