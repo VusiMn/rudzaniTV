@@ -33,7 +33,7 @@ export default function SectionBlogList() {
                 <CardHeader image plain>
                   <Link
                     to={{
-                      pathname: "/ru-blog-posts",
+                      pathname: "/blog",
                       blogId: blog.id,
                     }}
                     className={classes.listItem}
@@ -55,7 +55,7 @@ export default function SectionBlogList() {
                   <h4 className={classes.cardTitle}>
                     <Link
                       to={{
-                        pathname: "/ru-blog-posts",
+                        pathname: "/blog",
                         blogId: blog.id,
                       }}
                       className={classes.listItem}
@@ -64,10 +64,11 @@ export default function SectionBlogList() {
                     </Link>
                   </h4>
                   <p className={classes.description}>
-                    {blog.bannerSubTitle}
+                    {blog.mainTitle}
+                    <br></br>
                     <Link
                       to={{
-                        pathname: "/ru-blog-posts",
+                        pathname: "/blog",
                         blogId: blog.id,
                       }}
                       className={classes.listItem}

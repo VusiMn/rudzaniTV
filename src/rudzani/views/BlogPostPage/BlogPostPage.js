@@ -44,7 +44,7 @@ export default function BlogPostPage(props) {
           color: "info",
         }}
       />
-      <Parallax image={require("assets/img/bg5.jpg")} filter="dark">
+      {/*<Parallax image={require("assets/img/bg5.jpg")} filter="dark">
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem md={8} className={classes.textCenter}>
@@ -62,11 +62,36 @@ export default function BlogPostPage(props) {
             </GridItem>
           </GridContainer>
         </div>
+    </Parallax>*/}
+
+      <Parallax filter image={blogItem.bannerImage} filter="dark">
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem xs={12} sm={12} md={6}>
+              <h1 className={classes.title}>{blogItem.trailerName}</h1>
+              <h4 className={classes.subtitle}>{blogItem.bannerSubTitle}</h4>
+              <br />
+              <Button
+                color="danger"
+                size="lg"
+                href={blogItem.youtubeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fas fa-play" />
+                Watch video
+              </Button>
+              <h4 className={classes.subtitle}>
+                Blog post curated by {blogItem.writers}
+              </h4>
+            </GridItem>
+          </GridContainer>
+        </div>
       </Parallax>
       <div className={classes.main}>
         <div className={classes.container}>
           <SectionText blogItem={blogItem} />
-          <SectionBlogInfo />
+          <SectionBlogInfo blogItem={blogItem} />
         </div>
       </div>
       <Footer

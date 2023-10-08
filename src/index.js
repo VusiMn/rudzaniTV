@@ -54,7 +54,7 @@ ReactDOM.render(
       <Route path="/ibioscope-page" component={iBioscopeBlogPostPage} />
       <Route path="/services-page" component={ServicesPage} />
       <Route path="/our-team-page" component={TheTeamPage} />
-      <Route path="/ru-blog-posts" component={RuBlogPostPage} />
+      <Route path="/blog" component={RuBlogPostPage} />
       <Route path="/landing-page" component={ServicesPage} />
       <Route path="/blog-post" component={BlogPostPage} />
       <Route path="/blog-posts" component={BlogPostsPage} />
