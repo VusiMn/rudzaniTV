@@ -20,15 +20,18 @@ import SectionText from "./Sections/SectionText.js";
 import SectionBlogInfo from "./Sections/SectionBlogInfo.js";
 
 import blogPostPageStyle from "assets/jss/material-kit-pro-react/views/blogPostPageStyle.js";
-
+import { getBlogPostById } from "./paragraphContext.js";
 const useStyles = makeStyles(blogPostPageStyle);
 
-export default function BlogPostPage() {
+export default function BlogPostPage(props) {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   });
   const classes = useStyles();
+  const blogId =
+    typeof props.location.blogId !== "undefined" ? props.location.blogId : 1;
+  const blogItem = getBlogPostById(blogId);
   return (
     <div>
       <Header
@@ -62,7 +65,7 @@ export default function BlogPostPage() {
       </Parallax>
       <div className={classes.main}>
         <div className={classes.container}>
-          <SectionText />
+          <SectionText blogItem={blogItem} />
           <SectionBlogInfo />
         </div>
       </div>
