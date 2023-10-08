@@ -8,13 +8,8 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 import CardAvatar from "components/Card/CardAvatar.js";
-import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
 import Muted from "components/Typography/Muted.js";
-import officeStyle from "assets/jss/material-kit-pro-react/views/aboutUsSections/officeStyle.js";
-import VisionIcon from "@material-ui/icons/VisibilityOutlined";
-import GroupWork from "@material-ui/icons/GroupWork";
-import Fingerprint from "@material-ui/icons/Fingerprint";
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.js";
 
@@ -24,7 +19,6 @@ import cardProfile2Square from "assets/img/faces/mesete.png";
 import cardProfile4Square from "assets/img/faces/happy.jpeg";
 import cardProfile6Square from "assets/img/faces/pheeha.png";
 import cardProfile5Square from "assets/img/faces/Trod.JPG";
-import InfoArea from "components/InfoArea/InfoArea.js";
 const useStyles = makeStyles(teamsStyle);
 
 export default function SectionTeams({ ...rest }) {

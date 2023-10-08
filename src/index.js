@@ -42,6 +42,7 @@ import AboutUsRuPage from "rudzani/views/AboutUsPage/AboutUsPage.js";
 import ServicesPage from "rudzani/views/ServicesPage/ServicesPage.js";
 import iBioscopeBlogPostPage from "rudzani/views/iBioscopeBlogPostPage/iBioscopeBlogPostPage.js";
 import TheTeamPage from "rudzani/views/TheTeamPage/TheTeamPage.js";
+import RuBlogPostsPage from "rudzani/views/BlogsPostPage/BlogPostsPage.js";
 
 var hist = createBrowserHistory();
 
@@ -55,6 +56,7 @@ ReactDOM.render(
       <Route path="/landing-page" component={ServicesPage} />
       <Route path="/blog-post" component={BlogPostPage} />
       <Route path="/blog-posts" component={BlogPostsPage} />
+      <Route path="/ru-blog-posts" component={RuBlogPostsPage} />
       <Route path="/components" component={ComponentsPage} />
       <Route path="/contact-us" component={ContactUsPage} />
       <Route path="/ecommerce-page" component={EcommercePage} />

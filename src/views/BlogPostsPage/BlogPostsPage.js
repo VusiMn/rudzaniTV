@@ -38,7 +38,7 @@ export default function BlogPostsPage() {
         color="transparent"
         changeColorOnScroll={{
           height: 400,
-          color: "info"
+          color: "info",
         }}
       />
       <Parallax image={require("assets/img/bg10.jpg")} filter="dark" small>
