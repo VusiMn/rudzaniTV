@@ -73,52 +73,54 @@ export default function iBioscopeBlogPostPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=mkpr-blog-post"
-                    target="_blank"
+                    href="https://rudzani.tv"
                     className={classes.block}
+                    target="_blank"
                   >
-                    Creative Tim
+                    Rudzani Muthambi Properties (PTY) LTD
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-blog-post"
-                    target="_blank"
+                    href="https://rudzani.tv"
                     className={classes.block}
+                    target="_blank"
                   >
-                    About us
+                    About Us
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://blog.creative-tim.com/?ref=mkpr-blog-post"
-                    target="_blank"
+                    href="//blog.creative-tim.com/"
                     className={classes.block}
+                    target="_blank"
                   >
                     Blog
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-blog-post"
-                    target="_blank"
+                    href="https://www.youtube.com/watch?v=ro23zJUzwls"
                     className={classes.block}
+                    target="_blank"
                   >
-                    Licenses
+                    YouTube Channel
+                  </a>
+                </ListItem>
+                <ListItem className={classes.inlineBlock}>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100087684368238"
+                    className={classes.block}
+                    target="_blank"
+                  >
+                    FaceBook
                   </a>
                 </ListItem>
               </List>
             </div>
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=mkpr-blog-post"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
+              <Favorite className={classes.icon} />
             </div>
           </div>
         }

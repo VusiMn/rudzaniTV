@@ -70,20 +70,20 @@ export default function TheTeamPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=mkpr-about-us"
+                    href="https://rudzani.tv"
                     className={classes.block}
                     target="_blank"
                   >
-                    Creative Tim
+                    Rudzani Muthambi Properties (PTY) LTD
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-about-us"
+                    href="https://rudzani.tv"
                     className={classes.block}
                     target="_blank"
                   >
-                    About us
+                    About Us
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
@@ -97,25 +97,27 @@ export default function TheTeamPage() {
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-about-us"
+                    href="https://www.youtube.com/watch?v=ro23zJUzwls"
                     className={classes.block}
                     target="_blank"
                   >
-                    Licenses
+                    YouTube Channel
+                  </a>
+                </ListItem>
+                <ListItem className={classes.inlineBlock}>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100087684368238"
+                    className={classes.block}
+                    target="_blank"
+                  >
+                    FaceBook
                   </a>
                 </ListItem>
               </List>
             </div>
             <div className={classes.right}>
               &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=mkpr-about-us"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
+              <Favorite className={classes.icon} />
             </div>
           </div>
         }
