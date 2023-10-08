@@ -5,7 +5,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
-import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.js";
@@ -44,25 +43,6 @@ export default function BlogPostPage(props) {
           color: "info",
         }}
       />
-      {/*<Parallax image={require("assets/img/bg5.jpg")} filter="dark">
-        <div className={classes.container}>
-          <GridContainer justify="center">
-            <GridItem md={8} className={classes.textCenter}>
-              <h1 className={classes.title}>
-                How We Built the Most Successful Castle Ever
-              </h1>
-              <h4 className={classes.subtitle}>
-                The last 48 hours of my life were total madness. This is what I
-                did.
-              </h4>
-              <br />
-              <Button color="rose" size="lg" round>
-                <FormatAlignLeft /> Read Article
-              </Button>
-            </GridItem>
-          </GridContainer>
-        </div>
-    </Parallax>*/}
 
       <Parallax filter image={blogItem.bannerImage} filter="dark">
         <div className={classes.container}>

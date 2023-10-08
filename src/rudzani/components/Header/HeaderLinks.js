@@ -129,19 +129,6 @@ export default function HeaderLinks(props) {
 
       <ListItem className={classes.listItem}>
         <Button
-          href=""
-          className={classes.navLink}
-          onClick={(e) => e.preventDefault()}
-          color="transparent"
-        >
-          <Link to="/LectureVideosPage" className={classes.listItem}>
-            Videos
-          </Link>
-        </Button>
-      </ListItem>
-
-      <ListItem className={classes.listItem}>
-        <Button
           href="https://twitter.com/RuudzaniTV"
           target="_blank"
           color="transparent"

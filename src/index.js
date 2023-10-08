@@ -55,21 +55,8 @@ ReactDOM.render(
       <Route path="/services-page" component={ServicesPage} />
       <Route path="/our-team-page" component={TheTeamPage} />
       <Route path="/blog" component={RuBlogPostPage} />
-      <Route path="/landing-page" component={ServicesPage} />
-      <Route path="/blog-post" component={BlogPostPage} />
-      <Route path="/blog-posts" component={BlogPostsPage} />
       <Route path="/ru-blog-posts" component={RuBlogPostsPage} />
-      <Route path="/components" component={ComponentsPage} />
-      <Route path="/contact-us" component={ContactUsPage} />
-      <Route path="/ecommerce-page" component={EcommercePage} />
-      <Route path="/login-page" component={LoginPage} />
-      <Route path="/pricing" component={PricingPage} />
-      <Route path="/profile-page" component={ProfilePage} />
-      <Route path="/product-page" component={ProductPage} />
-      <Route path="/sections" component={SectionsPage} />
-      <Route path="/shopping-cart-page" component={ShoppingCartPage} />
-      <Route path="/error-page" component={ErrorPage} />
-      <Route path="/" component={PresentationPage} />
+      <Route path="/" component={AboutUsRuPage} />
     </Switch>
   </Router>,
   document.getElementById("root")
